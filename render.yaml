@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: namma-payana
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -c gunicorn.conf.py wsgi:app
+    plan: free
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: AI_PROVIDER
+        value: none
+      - key: OSRM_BASE_URL
+        value: https://router.project-osrm.org
+      - key: ALLOWED_ORIGINS
+        value: https://namma-payana.onrender.com
+      - key: PORT
+        value: "10000"
+      - key: WEB_CONCURRENCY
+        value: "1"
+      - key: LOG_LEVEL
+        value: info
