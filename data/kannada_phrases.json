@@ -1,0 +1,581 @@
+{
+  "version": "1.0",
+  "phrases": [
+    {
+      "id": "p01",
+      "kannada": "ನಮಸ್ಕಾರ",
+      "english": "Hello / Greetings",
+      "transliteration": "Namaskara",
+      "context": "Traditional greeting appropriate in all social settings.",
+      "formality": "polite",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Standard Kannada lexicon"
+    },
+    {
+      "id": "p02",
+      "kannada": "ಧನ್ಯವಾದಗಳು",
+      "english": "Thank you",
+      "transliteration": "Dhanyavadagalu",
+      "context": "Expressing gratitude to locals, drivers, shopkeepers.",
+      "formality": "formal",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Standard Kannada lexicon"
+    },
+    {
+      "id": "p03",
+      "kannada": "ತುಂಬಾ ಧನ್ಯವಾದ",
+      "english": "Thank you very much",
+      "transliteration": "Tumba dhanyavada",
+      "context": "Warm expression of deep gratitude.",
+      "formality": "polite",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Standard Kannada lexicon"
+    },
+    {
+      "id": "p04",
+      "kannada": "ಹೇಗಿದ್ದೀರಾ?",
+      "english": "How are you?",
+      "transliteration": "Hegiddeera?",
+      "context": "Polite inquiry to an elder or acquaintance.",
+      "formality": "polite",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p05",
+      "kannada": "ಚೆನ್ನಾಗಿದ್ದೇನೆ",
+      "english": "I am doing well",
+      "transliteration": "Chennagiddene",
+      "context": "Response when asked how you are.",
+      "formality": "casual",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p06",
+      "kannada": "ಇದು ಎಷ್ಟು?",
+      "english": "How much is this?",
+      "transliteration": "Idu eshtu?",
+      "context": "Asking prices in shops, markets, and stalls.",
+      "formality": "casual",
+      "scenario": "prices",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p07",
+      "kannada": "ಸ್ವಲ್ಪ ಕಡಿಮೆ ಮಾಡಿ",
+      "english": "Please reduce the price a little",
+      "transliteration": "Svalpa kadime maadi",
+      "context": "Friendly bargaining at traditional bazaars.",
+      "formality": "polite",
+      "scenario": "prices",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p08",
+      "kannada": "ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿ?",
+      "english": "Where is the bus stand?",
+      "transliteration": "Bus nildana elli?",
+      "context": "Transit navigation in towns across Karnataka.",
+      "formality": "polite",
+      "scenario": "transport",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p09",
+      "kannada": "ಮೈಸೂರು ಬಸ್ ಯಾವಾಗ ಹೊರಡುತ್ತದೆ?",
+      "english": "When does the Mysuru bus depart?",
+      "transliteration": "Mysuru bus yavaga horaduttade?",
+      "context": "Checking departure schedule at KSRTC terminal.",
+      "formality": "polite",
+      "scenario": "transport",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p10",
+      "kannada": "ರೈಲ್ವೆ ನಿಲ್ದಾಣಕ್ಕೆ ಹೋಗಲು ಆಟೋ ಬರುತ್ತಾ?",
+      "english": "Will the auto go to the railway station?",
+      "transliteration": "Railway nildanakke hogalu auto baruttaa?",
+      "context": "Hailing an auto-rickshaw to transit station.",
+      "formality": "polite",
+      "scenario": "transport",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p11",
+      "kannada": "ಮೀಟರ್ ಹಾಕಿ",
+      "english": "Please turn on the meter",
+      "transliteration": "Meter haaki",
+      "context": "Requesting auto driver in Bengaluru/Mysuru to use fare meter.",
+      "formality": "polite",
+      "scenario": "transport",
+      "reviewed": true,
+      "source": "Bengaluru commuter common usage"
+    },
+    {
+      "id": "p12",
+      "kannada": "ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ",
+      "english": "Please stop here",
+      "transliteration": "Illi nillisi",
+      "context": "Asking driver to halt at your destination.",
+      "formality": "polite",
+      "scenario": "transport",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p13",
+      "kannada": "ಮುಂದೆ ಹೋಗಿ",
+      "english": "Go straight ahead",
+      "transliteration": "Munde hogi",
+      "context": "Directing driver or asking navigation path.",
+      "formality": "polite",
+      "scenario": "directions",
+      "reviewed": true,
+      "source": "Standard Kannada navigational terms"
+    },
+    {
+      "id": "p14",
+      "kannada": "ಬಲಗಡೆ ತಿರುಗಿ",
+      "english": "Turn right",
+      "transliteration": "Balagade tirugi",
+      "context": "Navigating crossroads or lane junctions.",
+      "formality": "polite",
+      "scenario": "directions",
+      "reviewed": true,
+      "source": "Standard Kannada navigational terms"
+    },
+    {
+      "id": "p15",
+      "kannada": "ಎಡಗಡೆ ತಿರುಗಿ",
+      "english": "Turn left",
+      "transliteration": "Edagade tirugi",
+      "context": "Navigating street corners.",
+      "formality": "polite",
+      "scenario": "directions",
+      "reviewed": true,
+      "source": "Standard Kannada navigational terms"
+    },
+    {
+      "id": "p16",
+      "kannada": "ದೇವಸ್ಥಾನ ಎಷ್ಟು ದೂರ?",
+      "english": "How far is the temple?",
+      "transliteration": "Devasthana eshtu doora?",
+      "context": "Estimating walking or driving distance.",
+      "formality": "polite",
+      "scenario": "directions",
+      "reviewed": true,
+      "source": "Standard Kannada conversational grammar"
+    },
+    {
+      "id": "p17",
+      "kannada": "ಊಟ ಸಿಗುತ್ತಾ?",
+      "english": "Is meals / food available?",
+      "transliteration": "Oota siguttaa?",
+      "context": "Checking availability of traditional lunch in Khanavalis or canteens.",
+      "formality": "polite",
+      "scenario": "food",
+      "reviewed": true,
+      "source": "Karnataka hotel vernacular"
+    },
+    {
+      "id": "p18",
+      "kannada": "ಒಂದು ತಟ್ಟೆ ಇಡ್ಲಿ ಮತ್ತು ಕಾಫಿ ಕೊಡಿ",
+      "english": "Please give one plate idli and filter coffee",
+      "transliteration": "Ondu tatte idli mattu coffee kodi",
+      "context": "Classic breakfast order at a Darshini.",
+      "formality": "polite",
+      "scenario": "food",
+      "reviewed": true,
+      "source": "Darshini standard order pattern"
+    },
+    {
+      "id": "p19",
+      "kannada": "ಖಾರ ಕಡಿಮೆ ಇರಲಿ",
+      "english": "Make it less spicy please",
+      "transliteration": "Khara kadime irali",
+      "context": "Requesting mild preparation when ordering dishes.",
+      "formality": "polite",
+      "scenario": "food",
+      "reviewed": true,
+      "source": "Everyday restaurant request"
+    },
+    {
+      "id": "p20",
+      "kannada": "ಶುದ್ಧ ಸಸ್ಯಾಹಾರಿ ಊಟ",
+      "english": "Pure vegetarian food",
+      "transliteration": "Shuddha sasyahari oota",
+      "context": "Confirming vegetarian meal at dietary-restricted restaurants.",
+      "formality": "polite",
+      "scenario": "food",
+      "reviewed": true,
+      "source": "Hotel signage & menu terminology"
+    },
+    {
+      "id": "p21",
+      "kannada": "ಕುಡಿಯುವ ನೀರು ಕೊಡಿ",
+      "english": "Please give drinking water",
+      "transliteration": "Kudiyuva neeru kodi",
+      "context": "Requesting water at hotels or wayside eateries.",
+      "formality": "polite",
+      "scenario": "food",
+      "reviewed": true,
+      "source": "Everyday hospitality request"
+    },
+    {
+      "id": "p22",
+      "kannada": "ಬಿಲ್ ಕೊಡಿ",
+      "english": "Please give the bill",
+      "transliteration": "Bill kodi",
+      "context": "Settling account at restaurants or stores.",
+      "formality": "casual",
+      "scenario": "food",
+      "reviewed": true,
+      "source": "Common commercial phrase"
+    },
+    {
+      "id": "p23",
+      "kannada": "ಕೋಣೆ ಖಾಲಿ ಇದೆಯಾ?",
+      "english": "Is a room available?",
+      "transliteration": "Kone khaali ideya?",
+      "context": "Checking into a lodge, homestay, or guest house.",
+      "formality": "polite",
+      "scenario": "stay",
+      "reviewed": true,
+      "source": "Standard Kannada lodge inquiries"
+    },
+    {
+      "id": "p24",
+      "kannada": "ಒಂದು ದಿನಕ್ಕೆ ಎಷ್ಟು ಬಾಡಿಗೆ?",
+      "english": "What is the tariff per day?",
+      "transliteration": "Ondu dinakke eshtu baadige?",
+      "context": "Inquiring room rent rate before booking.",
+      "formality": "polite",
+      "scenario": "stay",
+      "reviewed": true,
+      "source": "Standard Kannada lodge inquiries"
+    },
+    {
+      "id": "p25",
+      "kannada": "ಬಿಸಿ ನೀರು ಬರುತ್ತಾ?",
+      "english": "Is hot water available?",
+      "transliteration": "Bisi neeru baruttaa?",
+      "context": "Checking morning geyser availability in hill stations (Coorg, Chikkamagaluru).",
+      "formality": "polite",
+      "scenario": "stay",
+      "reviewed": true,
+      "source": "Standard travel inquiry"
+    },
+    {
+      "id": "p26",
+      "kannada": "ಸಹಾಯ ಮಾಡಿ",
+      "english": "Please help me",
+      "transliteration": "Sahaya maadi",
+      "context": "Emergency or needing urgent assistance.",
+      "formality": "urgent",
+      "scenario": "help",
+      "reviewed": true,
+      "source": "Standard Kannada assistance vocabulary"
+    },
+    {
+      "id": "p27",
+      "kannada": "ಔಷಧಿ ಅಂಗಡಿ ಎಲ್ಲಿದೆ?",
+      "english": "Where is the pharmacy / medical shop?",
+      "transliteration": "Aushadhi angadi ellide?",
+      "context": "Finding medicine in case of travel illness.",
+      "formality": "polite",
+      "scenario": "help",
+      "reviewed": true,
+      "source": "Everyday healthcare terminology"
+    },
+    {
+      "id": "p28",
+      "kannada": "ಪೊಲೀಸ್ ಠಾಣೆ ಎಲ್ಲಿದೆ?",
+      "english": "Where is the police station?",
+      "transliteration": "Police thaane ellide?",
+      "context": "Reporting incidents or seeking security guidance.",
+      "formality": "formal",
+      "scenario": "help",
+      "reviewed": true,
+      "source": "Public service directory usage"
+    },
+    {
+      "id": "p29",
+      "kannada": "ನನಗೆ ಕನ್ನಡ ಸ್ವಲ್ಪ ಗೊತ್ತು",
+      "english": "I know only a little Kannada",
+      "transliteration": "Nanage Kannada svalpa gottu",
+      "context": "Endearing, respectful phrase that delights locals and builds instant rapport.",
+      "formality": "friendly",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Popular language-learning bridge phrase"
+    },
+    {
+      "id": "p30",
+      "kannada": "ಇಂಗ್ಲಿಷ್ ಮಾತನಾಡುತ್ತೀರಾ?",
+      "english": "Do you speak English?",
+      "transliteration": "English maatanaadutteera?",
+      "context": "Checking language comfort politely.",
+      "formality": "polite",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Standard conversational grammar"
+    },
+    {
+      "id": "p31",
+      "kannada": "ಪ್ರವೇಶ ಶುಲ್ಕ ಎಷ್ಟು?",
+      "english": "How much is the entry fee?",
+      "transliteration": "Pravesha shulka eshtu?",
+      "context": "Ticketing counter at heritage monuments or parks.",
+      "formality": "formal",
+      "scenario": "prices",
+      "reviewed": true,
+      "source": "Department of Tourism official signboards"
+    },
+    {
+      "id": "p32",
+      "kannada": "ಆನ್‌ಲೈನ್ ಪಾವತಿ (ಯುಪಿಐ) ಇದೆಯಾ?",
+      "english": "Is UPI / online payment accepted?",
+      "transliteration": "Online paavati (UPI) ideya?",
+      "context": "Checking PhonePe/GPay QR code payment availability.",
+      "formality": "casual",
+      "scenario": "prices",
+      "reviewed": true,
+      "source": "Modern retail vernacular"
+    },
+    {
+      "id": "p33",
+      "kannada": "ಫೋಟೋ ತೆಗೆಯಬಹುದಾ?",
+      "english": "Can I take a photograph?",
+      "transliteration": "Photo tegeyabahuda?",
+      "context": "Seeking permission before photographing temple sanctums or artisans.",
+      "formality": "polite",
+      "scenario": "culture",
+      "reviewed": true,
+      "source": "Cultural heritage etiquette"
+    },
+    {
+      "id": "p34",
+      "kannada": "ಒಳಗೆ ಪಾದರಕ್ಷೆ ಬಿಡಿ",
+      "english": "Leave footwear outside",
+      "transliteration": "Olage paadarakkhe bidi",
+      "context": "Common temple/heritage notice board phrase.",
+      "formality": "notice",
+      "scenario": "signs",
+      "reviewed": true,
+      "source": "Standard temple signage in Karnataka"
+    },
+    {
+      "id": "p35",
+      "kannada": "ನಿಶ್ಯಬ್ದತೆ ಕಾಪಾಡಿ",
+      "english": "Maintain silence",
+      "transliteration": "Nishyabdate kaapaadi",
+      "context": "Sign at libraries, prayer halls, and monuments.",
+      "formality": "notice",
+      "scenario": "signs",
+      "reviewed": true,
+      "source": "Public signage in Karnataka"
+    },
+    {
+      "id": "p36",
+      "kannada": "ಸ್ವಾಗತ",
+      "english": "Welcome",
+      "transliteration": "Svaagata",
+      "context": "Found on state border archways and town portals.",
+      "formality": "formal",
+      "scenario": "signs",
+      "reviewed": true,
+      "source": "Standard Kannada civic signage"
+    },
+    {
+      "id": "p37",
+      "kannada": "ಶುಭ ಪ್ರಯಾಣ",
+      "english": "Happy and safe journey",
+      "transliteration": "Shubha prayana",
+      "context": "Blessing given upon departure or seen on bus transport rear panels.",
+      "formality": "polite",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Karnataka State Road Transport Corporation standard blessing"
+    },
+    {
+      "id": "p38",
+      "kannada": "ಮತ್ತೆ ಸಿಗೋಣ",
+      "english": "See you again",
+      "transliteration": "Matte sigona",
+      "context": "Warm farewell to hosts or travel companions.",
+      "formality": "friendly",
+      "scenario": "greetings",
+      "reviewed": true,
+      "source": "Standard conversational farewell"
+    },
+    {
+      "id": "p39",
+      "kannada": "ಇದು ತುಂಬಾ ರುಚಿಯಾಗಿದೆ",
+      "english": "This is very delicious",
+      "transliteration": "Idu tumba ruchiyagide",
+      "context": "Complimenting the cook or server at a meal.",
+      "formality": "friendly",
+      "scenario": "food",
+      "reviewed": true,
+      "source": "Common vernacular compliment"
+    },
+    {
+      "id": "p40",
+      "kannada": "ಚಿಲ್ಲರೆ ಇಲ್ಲ",
+      "english": "No change available",
+      "transliteration": "Chillare illa",
+      "context": "Frequent response from bus conductors or vendors with large currency notes.",
+      "formality": "casual",
+      "scenario": "shopping",
+      "reviewed": true,
+      "source": "Daily commerce term"
+    },
+    {
+      "id": "p41",
+      "kannada": "ರಸೀದಿ ಕೊಡಿ",
+      "english": "Please give a receipt",
+      "transliteration": "Raseedi kodi",
+      "context": "Requesting official ticket or toll receipt.",
+      "formality": "formal",
+      "scenario": "shopping",
+      "reviewed": true,
+      "source": "Commercial transaction vocabulary"
+    },
+    {
+      "id": "p42",
+      "kannada": "ಮುಖ್ಯ ದ್ವಾರ ಎಲ್ಲಿ?",
+      "english": "Where is the main entrance?",
+      "transliteration": "Mukhya dwaara elli?",
+      "context": "Locating ticket gate or entrance to monuments.",
+      "formality": "polite",
+      "scenario": "directions",
+      "reviewed": true,
+      "source": "Navigational landmark usage"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "dialogue_darshini",
+      "title": "Breakfast at an Udupi Darshini",
+      "scenario": "food",
+      "steps": [
+        {
+          "speaker": "Traveller",
+          "kannada": "ನಮಸ್ಕಾರ, ಉಪಹಾರಕ್ಕೆ ಏನು ಸಿಗುತ್ತೆ?",
+          "transliteration": "Namaskara, upahaarakke enu sigutte?",
+          "english": "Hello, what is available for breakfast?"
+        },
+        {
+          "speaker": "Server",
+          "kannada": "ನಮಸ್ಕಾರ ಸ್ವಾಮಿ! ಬಿಸಿ ತಟ್ಟೆ ಇಡ್ಲಿ, ಮಸಾಲೆ ದೋಸೆ, ಖಾರಾಬಾತ್ ಇದೆ.",
+          "transliteration": "Namaskara swami! Bisi tatte idli, masale dose, kharabath ide.",
+          "english": "Welcome sir! We have hot plate idli, masala dosa, and kharabath."
+        },
+        {
+          "speaker": "Traveller",
+          "kannada": "ಒಂದು ತಟ್ಟೆ ಇಡ್ಲಿ ವಡೆ ಮತ್ತು ಫಿಲ್ಟರ್ ಕಾಫಿ ಕೊಡಿ.",
+          "transliteration": "Ondu tatte idli vade mattu filter coffee kodi.",
+          "english": "Please give one plate idli-vada and a filter coffee."
+        },
+        {
+          "speaker": "Server",
+          "kannada": "ಆಯಿತು, ಐದು ನಿಮಿಷದಲ್ಲಿ ತರುತ್ತೇನೆ.",
+          "transliteration": "Aayitu, aidu nimishadalli taruttene.",
+          "english": "Right away, bringing it in five minutes."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_auto",
+      "title": "Hailing an Auto to Mysuru Palace",
+      "scenario": "transport",
+      "steps": [
+        {
+          "speaker": "Traveller",
+          "kannada": "ಅರಮನೆಗೆ ಹೋಗಲು ಆಟೋ ಬರುತ್ತಾ?",
+          "transliteration": "Aramanega hogalu auto baruttaa?",
+          "english": "Will the auto go to the Palace?"
+        },
+        {
+          "speaker": "Driver",
+          "kannada": "ಹೌದು ಬನ್ನಿ, ಮೀಟರ್ ಮೇಲೆ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಆಗುತ್ತೆ.",
+          "transliteration": "Haudu banni, meter mele ippattu roopayi aagutte.",
+          "english": "Yes please hop in, it will be twenty rupees above the meter."
+        },
+        {
+          "speaker": "Traveller",
+          "kannada": "ಸರಿ, ಮೀಟರ್ ಹಾಕಿ ಹೋಗೋಣ.",
+          "transliteration": "Sari, meter haaki hogona.",
+          "english": "All right, please put the meter on and let's go."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_market",
+      "title": "Buying Channapatna Wooden Toys or Coffee",
+      "scenario": "shopping",
+      "steps": [
+        {
+          "speaker": "Traveller",
+          "kannada": "ಈ ಕಾಫಿ ಪುಡಿ ಎಷ್ಟು ಬೆಲೆ?",
+          "transliteration": "Ee coffee pudi eshtu bele?",
+          "english": "What is the price of this coffee powder?"
+        },
+        {
+          "speaker": "Shopkeeper",
+          "kannada": "ಅರ್ಧ ಕಿಲೋಗೆ ಇನ್ನೂರು ರೂಪಾಯಿ ಸ್ವಾಮಿ.",
+          "transliteration": "Ardha kiloge innooru roopayi swami.",
+          "english": "Two hundred rupees for half a kilogram, sir."
+        },
+        {
+          "speaker": "Traveller",
+          "kannada": "ಸರಿ, ಒಂದು ಕಿಲೋ ಪ್ಯಾಕ್ ಮಾಡಿ ಕೊಡಿ. ಯುಪಿಐ ಇದೆಯಾ?",
+          "transliteration": "Sari, ondu kilo pack maadi kodi. UPI ideya?",
+          "english": "Okay, please pack one kilogram. Do you take UPI?"
+        },
+        {
+          "speaker": "Shopkeeper",
+          "kannada": "ಖಂಡಿತ, ಈ ಕ್ಯೂಆರ್ ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.",
+          "transliteration": "Khandita, ee QR code scan maadi.",
+          "english": "Certainly, please scan this QR code."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_directions",
+      "title": "Asking for Temple Route",
+      "scenario": "directions",
+      "steps": [
+        {
+          "speaker": "Traveller",
+          "kannada": "ಕ್ಷಮಿಸಿ, ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯಕ್ಕೆ ಹೇಗೆ ಹೋಗಬೇಕು?",
+          "transliteration": "Kshamisi, Virupaksha devalayakke hege hogabeku?",
+          "english": "Excuse me, how do I reach Virupaksha temple?"
+        },
+        {
+          "speaker": "Local",
+          "kannada": "ಇಲ್ಲಿಂದ ನೇರವಾಗಿ ಮುಂದೆ ಹೋಗಿ, ಬಲಗಡೆ ತಿರುಗಿದರೆ ದೊಡ್ಡ ಗೋಪುರ ಕಾಣುತ್ತದೆ.",
+          "transliteration": "Illinda neravaagi munde hogi, balagade tirugidare dodda gopura kaanuttade.",
+          "english": "Go straight ahead from here, turn right and you will see the grand gopura."
+        },
+        {
+          "speaker": "Traveller",
+          "kannada": "ತುಂಬಾ ಧನ್ಯವಾದಗಳು ಅಣ್ಣ!",
+          "transliteration": "Tumba dhanyavadagalu anna!",
+          "english": "Thank you very much, brother!"
+        }
+      ]
+    }
+  ]
+}

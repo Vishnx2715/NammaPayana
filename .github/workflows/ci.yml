@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: ["master", "main"]
+  pull_request:
+    branches: ["master", "main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Ruff lint
+        run: ruff check services/ app.py config.py scripts/ --output-format=github
+
+      - name: Mypy type check
+        run: mypy services/ --ignore-missing-imports --no-error-summary || true
+
+      - name: Bandit security scan
+        run: bandit -r services/ app.py -ll -q || true
+
+      - name: Run tests with coverage
+        run: |
+          pip install pytest-cov
+          pytest tests/ -q --cov=services --cov-report=term-missing --cov-fail-under=70
+        env:
+          FLASK_ENV: testing
+          SECRET_KEY: ci-test-secret-key-not-for-production
+
+      - name: Validate destination data
+        run: python scripts/validate_data.py
+
+      - name: Gitleaks secret scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        continue-on-error: true

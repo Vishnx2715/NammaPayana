@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namma Payana — Beyond Destinations. Into Karnataka.</title>
+  <meta name="description" content="Constraint-aware, culture-first Karnataka travel planner powered by a deterministic Trip Reality Engine. Budget-exact, schedule-verified, hallucination-free.">
+  <meta name="keywords" content="Karnataka travel planner, Hampi, Mysuru, Namma Payana, Kannada tourism, deterministic itinerary">
+  <meta property="og:title" content="Namma Payana – Beyond Destinations. Into Karnataka.">
+  <meta property="og:description" content="The only Karnataka planner that mathematically guarantees your budget and schedule.">
+  <meta property="og:image" content="/static/images/og-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#8B2E1F">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Namma Payana Stylesheet & Favicon -->
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <link rel="stylesheet" href="/static/css/style.css?v=20261026_01">
+</head>
+<body>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite" role="status"></div>
+
+  <!-- Top Navigation -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <a href="#" class="brand-wrap" data-nav="landing" aria-label="Namma Payana Home">
+        <span class="brand-title" data-i18n="brand.title">Namma Payana</span>
+        <span class="brand-sub" data-i18n="brand.sub">ನಮ್ಮ ಪಯಣ</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <div class="nav-links">
+          <button class="nav-btn" data-nav="landing" id="nav-landing" data-i18n="nav.home">Home</button>
+          <button class="nav-btn" data-nav="journey" id="nav-journey" data-i18n="nav.plan">Plan Journey</button>
+          <button class="nav-btn" data-nav="map" id="nav-map" data-i18n="nav.map">Karnataka Atlas</button>
+          <button class="nav-btn" data-nav="kannada" id="nav-kannada" data-i18n="nav.kannada">Kannada Companion</button>
+          <button class="nav-btn" data-nav="saved" id="nav-saved" data-i18n="nav.saved">Saved Trips</button>
+          <button class="btn-primary" data-nav="journey" style="padding: 9px 20px; font-size: 13px;" data-i18n="nav.create">
+            + Create Journey
+          </button>
+        </div>
+        <!-- 6-Language Dropdown Selector -->
+        <div class="lang-dropdown-wrap" id="lang-dropdown-wrap">
+          <button class="lang-dropdown-btn" id="lang-dropdown-btn" type="button" aria-label="Select Language" title="Select Website Language">
+            <span id="lang-dropdown-btn-label">English</span>
+            <span class="lang-dropdown-arrow">▾</span>
+          </button>
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu">
+            <button class="lang-opt active" type="button" data-lang="en">🌐 English</button>
+            <button class="lang-opt" type="button" data-lang="kn">ಕನ್ನಡ (Kannada)</button>
+            <button class="lang-opt" type="button" data-lang="hi">हिन्दी (Hindi)</button>
+            <button class="lang-opt" type="button" data-lang="te">తెలుగు (Telugu)</button>
+            <button class="lang-opt" type="button" data-lang="ta">தமிழ் (Tamil)</button>
+            <button class="lang-opt" type="button" data-lang="ml">മലയാളം (Malayalam)</button>
+          </div>
+        </div>
+
+        <!-- User Authentication & Profile Badge -->
+        <div class="nav-auth-wrap" id="nav-auth-wrap">
+          <button class="nav-btn auth-login-nav-btn active" data-nav="login" id="nav-login-btn">
+            <span>🔑</span> <span>Sign In</span>
+          </button>
+          <div class="nav-user-container" id="nav-user-container" style="display: none;">
+            <div class="nav-user-avatar" id="nav-user-avatar">P</div>
+            <div class="nav-user-details">
+              <span class="nav-user-name" id="nav-user-name">Praveen Kumar</span>
+              <span class="nav-user-persona" id="nav-user-persona">Heritage Explorer</span>
+            </div>
+            <button class="nav-logout-btn" id="nav-logout-btn" title="Sign Out">
+              <span>Sign Out</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- VIEW 0: LOGIN & REGISTER                         -->
+  <!-- ════════════════════════════════════════════════ -->
+  <section id="view-login" class="view-section active auth-page-section">
+    <div class="auth-page-bg">
+      <div class="auth-page-ambient-1"></div>
+      <div class="auth-page-ambient-2"></div>
+    </div>
+    
+    <div class="container auth-container">
+      <div class="auth-grid">
+        
+        <!-- Left Column: Cultural Heritage & Trust Showcase -->
+        <div class="auth-showcase-card">
+          <div class="auth-showcase-badge">
+            <span class="auth-showcase-badge-dot"></span>
+            <span>ಅಧಿಕೃತ ಕರ್ನಾಟಕ ಪ್ರವಾಸ ವೇದಿಕೆ • Official Platform</span>
+          </div>
+
+          <h2 class="auth-showcase-title">
+            ನಿಮ್ಮ ಪಯಣ <br>
+            <span class="auth-highlight">ಇಲ್ಲಿಂದ</span> ಪ್ರಾರಂಭ.
+          </h2>
+          <p class="auth-showcase-subtitle">
+            Beyond Destinations. Into Karnataka. Experience the only travel reality platform engineered with verified road topography, authentic gazette fees, and cultural heritage insights.
+          </p>
+
+          <div class="auth-features-list">
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon">🏛️</div>
+              <div class="auth-feature-text">
+                <strong>Deterministic Reality Engine</strong>
+                <span>Zero hallucinations. Every kilometer and rupee verified against Karnataka tourism benchmarks.</span>
+              </div>
+            </div>
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon">🗺️</div>
+              <div class="auth-feature-text">
+                <strong>Personalized Cultural Personas</strong>
+                <span>Tailored routes for heritage explorers, Western Ghats trekkers, and coastal foodies.</span>
+              </div>
+            </div>
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon">💾</div>
+              <div class="auth-feature-text">
+                <strong>Permanent Trip Vault & Offline Sync</strong>
+                <span>Save, replan, and export your custom itineraries anytime, anywhere.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cultural Quote / Heritage Banner -->
+          <div class="auth-quote-box">
+            <div class="auth-quote-mark">“</div>
+            <p class="auth-quote-kannada">ಎಲ್ಲಾದರೂ ಇರು, ಎಂತಾದರೂ ಇರು, ಎಂದೆಂದಿಗೂ ನೀ ಕನ್ನಡವಾಗಿರು.</p>
+            <span class="auth-quote-author">— ರಾಷ್ಟ್ರಕವಿ ಕುವೆಂಪು (Rashtrakavi Kuvempu)</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Authentication Card (Login & Register) -->
+        <div class="auth-card-wrapper">
+          <div class="auth-card">
+
+            <!-- Card Header -->
+            <div class="auth-card-header">
+              <div class="auth-emblem">ನ</div>
+              <h3 class="auth-card-title">Namma Payana Account</h3>
+              <p class="auth-card-subtitle">Sign in to unlock personalized trips or create your account</p>
+            </div>
+
+            <!-- Tabs Switcher -->
+            <div class="auth-tabs-wrap">
+              <div class="auth-tabs-nav">
+                <div class="auth-tab-indicator" id="auth-tab-indicator"></div>
+                <button type="button" class="auth-tab-btn active" id="auth-tab-btn-login" onclick="Auth.switchTab('login')">
+                  Sign In
+                </button>
+                <button type="button" class="auth-tab-btn" id="auth-tab-btn-register" onclick="Auth.switchTab('register')">
+                  Create Account
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Demo Login Banner -->
+            <div class="auth-demo-banner">
+              <div class="auth-demo-info">
+                <span class="auth-demo-tag"> Quick Test</span>
+                <!-- <span>Evaluating the hackathon app? Sign in with 1-click!</span> -->
+              </div>
+              <button type="button" class="btn-demo-quick" onclick="Auth.quickDemoLogin()" title="Sign in as Praveen Kumar (Demo Traveler)">
+                <span>1-Click Demo Login</span>
+              </button>
+            </div>
+
+            <!-- Alert Box for Login -->
+            <div id="auth-alert-login" class="auth-alert error" style="display: none;"></div>
+
+            <!-- PANEL 1: LOGIN FORM -->
+            <div id="auth-panel-login" class="auth-panel">
+              <!-- Google OAuth Button -->
+              <button type="button" class="btn-google-oauth" onclick="Auth.signInWithGoogle()" aria-label="Continue with Google">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                  <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.616z"/>
+                  <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/>
+                  <path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707s.102-1.167.282-1.707V4.961H.957C.347 6.173 0 7.548 0 9s.347 2.827.957 4.039l3.007-2.332z"/>
+                  <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.961L3.964 7.293C4.672 5.166 6.656 3.58 9 3.58z"/>
+                </svg>
+                <span>Continue with Google</span>
+              </button>
+
+              <div class="auth-divider"><span>OR WITH EMAIL</span></div>
+
+              <form id="auth-form-login" novalidate>
+                <div class="auth-form-group">
+                  <label for="login-identifier" class="auth-label">Email or Username</label>
+                  <div class="auth-input-wrap">
+                    <span class="auth-input-icon">👤</span>
+                    <input
+                      type="text"
+                      id="login-identifier"
+                      class="auth-input"
+                      placeholder="demo@nammapayana.in or username"
+                      required
+                      autocomplete="username"
+                    />
+                  </div>
+                </div>
+
+                <div class="auth-form-group">
+                  <div class="auth-label-row">
+                    <label for="login-password" class="auth-label">Password</label>
+                    <span class="auth-hint">demo123 for demo</span>
+                  </div>
+                  <div class="auth-input-wrap">
+                    <span class="auth-input-icon">🔒</span>
+                    <input
+                      type="password"
+                      id="login-password"
+                      class="auth-input"
+                      placeholder="••••••••"
+                      required
+                      autocomplete="current-password"
+                    />
+                    <button
+                      type="button"
+                      class="auth-pwd-toggle"
+                      onclick="Auth.togglePassword('login-password', this)"
+                      aria-label="Toggle password visibility"
+                    >👁️</button>
+                  </div>
+                </div>
+
+                <div class="auth-form-options">
+                  <label class="auth-checkbox-label">
+                    <input type="checkbox" id="login-remember" checked />
+                    <span>Keep me signed in</span>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-primary auth-submit-btn" id="login-submit-btn">
+                  Sign In to Namma Payana →
+                </button>
+              </form>
+
+              <div class="auth-card-footer">
+                <p>New to Namma Payana? <a href="#" onclick="event.preventDefault(); Auth.switchTab('register');">Create an account</a></p>
+                <div class="auth-divider"><span>OR</span></div>
+                <button type="button" class="btn-guest-continue" onclick="Auth.continueAsGuest()">
+                  Explore as Guest Traveler →
+                </button>
+              </div>
+            </div>
+
+            <!-- Alert Box for Register -->
+            <div id="auth-alert-register" class="auth-alert error" style="display: none;"></div>
+
+            <!-- PANEL 2: REGISTER FORM -->
+            <div id="auth-panel-register" class="auth-panel" style="display: none;">
+              <!-- Google OAuth Button -->
+              <button type="button" class="btn-google-oauth" onclick="Auth.signInWithGoogle()" aria-label="Sign up with Google">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                  <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.616z"/>
+                  <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/>
+                  <path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707s.102-1.167.282-1.707V4.961H.957C.347 6.173 0 7.548 0 9s.347 2.827.957 4.039l3.007-2.332z"/>
+                  <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.961L3.964 7.293C4.672 5.166 6.656 3.58 9 3.58z"/>
+                </svg>
+                <span>Sign up with Google</span>
+              </button>
+
+              <div class="auth-divider"><span>OR WITH EMAIL</span></div>
+
+              <form id="auth-form-register" novalidate>
+                <div class="auth-form-grid-2">
+                  <div class="auth-form-group">
+                    <label for="reg-fullname" class="auth-label">Full Name *</label>
+                    <div class="auth-input-wrap">
+                      <span class="auth-input-icon">📝</span>
+                      <input type="text" id="reg-fullname" class="auth-input" placeholder="e.g. Ananya Rao" required autocomplete="name" />
+                    </div>
+                  </div>
+                  <div class="auth-form-group">
+                    <label for="reg-username" class="auth-label">Username *</label>
+                    <div class="auth-input-wrap">
+                      <span class="auth-input-icon">@</span>
+                      <input type="text" id="reg-username" class="auth-input" placeholder="ananya_travels" required autocomplete="username" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="auth-form-group">
+                  <label for="reg-email" class="auth-label">Email Address *</label>
+                  <div class="auth-input-wrap">
+                    <span class="auth-input-icon">✉️</span>
+                    <input type="email" id="reg-email" class="auth-input" placeholder="ananya@example.com" required autocomplete="email" />
+                  </div>
+                </div>
+
+                <div class="auth-form-grid-2">
+                  <div class="auth-form-group">
+                    <label for="reg-password" class="auth-label">Password *</label>
+                    <div class="auth-input-wrap">
+                      <span class="auth-input-icon">🔒</span>
+                      <input type="password" id="reg-password" class="auth-input" placeholder="Min. 10 chars" required autocomplete="new-password" />
+                      <button type="button" class="auth-pwd-toggle" onclick="Auth.togglePassword('reg-password', this)">👁️</button>
+                    </div>
+                  </div>
+                  <div class="auth-form-group">
+                    <label for="reg-confirm-password" class="auth-label">Confirm Password *</label>
+                    <div class="auth-input-wrap">
+                      <span class="auth-input-icon">🔒</span>
+                      <input type="password" id="reg-confirm-password" class="auth-input" placeholder="Re-enter" required autocomplete="new-password" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Password Strength Meter -->
+                <div class="auth-pwd-strength">
+                  <div class="auth-pwd-bar-bg"><div class="auth-pwd-bar-fill" id="pwd-strength-bar"></div></div>
+                  <span class="auth-pwd-label" id="pwd-strength-label"></span>
+                </div>
+
+                <button type="submit" class="btn-primary auth-submit-btn" id="register-submit-btn">
+                  Create My Account & Enter →
+                </button>
+              </form>
+
+              <div class="auth-card-footer">
+                <p>Already have an account? <a href="#" onclick="event.preventDefault(); Auth.switchTab('login');">Sign In</a></p>
+                <div class="auth-divider"><span>OR</span></div>
+                <button type="button" class="btn-guest-continue" onclick="Auth.continueAsGuest()">
+                  Explore as Guest Traveler →
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- VIEW 1: LANDING                                 -->
+  <!-- ════════════════════════════════════════════════ -->
+  <main id="view-landing" class="view-section" role="main" style="padding: 0;">
+
+    <!-- Hero -->
+    <section class="hero">
+      <canvas id="hero-particle-canvas"></canvas>
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-eyebrow">
+              <div class="hero-eyebrow-dot"></div>
+              <span data-i18n="hero.eyebrow">Kannada Digital Innovation Hackathon 2026</span>
+            </div>
+            <h1 class="hero-title" data-i18n="hero.title">
+              Karnataka Is<br>
+              <span class="hero-title-accent">Calling</span> — Your<br>
+              Way Awaits.
+            </h1>
+            <p class="hero-sub" data-i18n="hero.sub">
+              Tell us your budget, days, and what moves you. Our deterministic
+              Trip Reality Engine crafts a journey validated against real road
+              distances, official entry fees, and living heritage schedules.
+            </p>
+            <div class="hero-actions">
+              <button class="btn-primary" data-nav="journey" style="font-size: 15px; padding: 14px 30px;" data-i18n="hero.btn_create">
+                Create My Journey →
+              </button>
+              <button class="btn-secondary" data-nav="map" style="font-size: 15px; padding: 13px 28px;" data-i18n="hero.btn_atlas">
+                Explore Atlas
+              </button>
+            </div>
+            <div class="hero-trust-bar">
+              <div class="hero-trust-item">
+                <span class="hero-trust-icon">✓</span>
+                <span data-i18n="hero.trust_offline">Works offline</span>
+              </div>
+              <div class="hero-trust-item">
+                <span class="hero-trust-icon">✓</span>
+                <span data-i18n="hero.trust_arithmetic">Exact ₹ decimal arithmetic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Estimator Widget -->
+          <div class="hero-estimator-card">
+            <h3 class="estimator-title" data-i18n="est.title">Quick Journey Estimator</h3>
+            <p class="estimator-subtitle" data-i18n="est.subtitle">Real-time benchmark — Karnataka official tourism rates:</p>
+            <div class="estimator-fields">
+              <div>
+                <label class="estimator-field-label" for="est-city" data-i18n="est.label_hub">Start Hub</label>
+                <select id="est-city" class="estimator-select">
+                  <option value="Bengaluru" selected data-i18n="step1.hub_bengaluru">Bengaluru</option>
+                  <option value="Mysuru" data-i18n="step1.hub_mysuru">Mysuru</option>
+                  <option value="Mangaluru" data-i18n="step1.hub_mangaluru">Mangaluru</option>
+                  <option value="Hubballi" data-i18n="step1.hub_hubballi">Hubballi</option>
+                </select>
+              </div>
+              <div>
+                <label class="estimator-field-label" for="est-days" data-i18n="est.label_duration">Duration</label>
+                <select id="est-days" class="estimator-select">
+                  <option value="2" data-i18n="est.opt_days_2">2 Days (Weekend)</option>
+                  <option value="3" selected data-i18n="est.opt_days_3">3 Days (Classic)</option>
+                  <option value="5" data-i18n="est.opt_days_5">5 Days (Immersive)</option>
+                  <option value="7" data-i18n="est.opt_days_7">7 Days (Grand Tour)</option>
+                </select>
+              </div>
+              <div>
+                <label class="estimator-field-label" for="est-travellers" data-i18n="est.label_travellers">Travellers</label>
+                <input id="est-travellers" type="number" min="1" max="15" value="2" class="estimator-input">
+              </div>
+              <div>
+                <label class="estimator-field-label" for="est-style" data-i18n="est.label_style">Style</label>
+                <select id="est-style" class="estimator-select">
+                  <option value="economical" selected data-i18n="est.opt_style_eco">Economical</option>
+                  <option value="moderate" data-i18n="est.opt_style_mod">Moderate</option>
+                  <option value="luxury" data-i18n="est.opt_style_lux">Luxury</option>
+                </select>
+              </div>
+              <div class="estimator-field-full">
+                <div class="estimator-result-banner">
+                  <div>
+                    <span style="font-size: 10px; text-transform: uppercase; color: var(--charcoal-muted); font-weight: 700; letter-spacing: 1px;" data-i18n="est.rec_budget">Recommended Budget:</span><br>
+                    <strong id="est-result-val" style="font-size: 26px; color: var(--earth-red); font-family: var(--font-serif);">₹8,000</strong>
+                    <span style="font-size: 11px; color: var(--charcoal-muted);" data-i18n="est.incl_reserve"> incl. 10% reserve</span>
+                  </div>
+                  <div style="text-align: right;">
+                    <span style="font-size: 10px; color: var(--charcoal-muted); display: block; margin-bottom: 4px;" data-i18n="est.suggested_route">Suggested Route:</span>
+                    <strong id="est-result-corridor" style="font-size: 12px; color: var(--forest); line-height: 1.4;">Mysuru–Belur–Halebidu</strong>
+                  </div>
+                </div>
+                <button class="btn-primary" id="btn-hero-apply" style="width: 100%; justify-content: center; font-size: 14px;" onclick="App.applyHeroEstimator()" data-i18n="est.btn_apply">
+                  Apply & Plan This Journey →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-value" data-count="69">69</span>
+            <span class="stat-label" data-i18n="stat.landmarks">Verified Karnataka Landmarks & Parks</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">1.3×</span>
+            <span class="stat-label" data-i18n="stat.ghats">Western Ghats Road Detour Topography Factor</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" data-count="42">42</span>
+            <span class="stat-label" data-i18n="stat.phrases">Verified Kannada Dialogue Expressions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Iconic Landmarks Showcase -->
+    <section class="featured-landmarks-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag" data-i18n="feat.tag">Heritage & Wonders</div>
+          <h2 class="section-title" data-i18n="feat.title">Iconic Karnataka Landmarks</h2>
+          <p class="section-desc" data-i18n="feat.desc">Explore authentic monuments, temples, coastal retreats, and wildlife parks across Karnataka.</p>
+        </div>
+        <div id="featured-landmarks-grid" class="featured-landmarks-grid"></div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag" data-i18n="how.tag">The Process</div>
+          <h2 class="section-title" data-i18n="how.title">From Dream to Verified Itinerary in 4 Steps</h2>
+          <p class="section-desc" data-i18n="how.desc">Every plan passes through four deterministic validation layers before you see it.</p>
+        </div>
+        <div class="how-steps-grid">
+          <div class="how-step">
+            <div class="how-step-num">1</div>
+            <div class="how-step-title" data-i18n="how.step1_title">Define Your Journey DNA</div>
+            <p class="how-step-desc" data-i18n="how.step1_desc">Set start city, days, budget, travel style, interests, and dietary preferences through a guided 4-step wizard.</p>
+          </div>
+          <div class="how-step">
+            <div class="how-step-num">2</div>
+            <div class="how-step-title" data-i18n="how.step2_title">Reality Engine Scores Destinations</div>
+            <p class="how-step-desc" data-i18n="how.step2_desc">Filters all 24 verified destinations against your constraints. Scores by interest match, proximity, and schedule fit.</p>
+          </div>
+          <div class="how-step">
+            <div class="how-step-num">3</div>
+            <div class="how-step-title" data-i18n="how.step3_title">Decimal Budget Computed</div>
+            <p class="how-step-desc" data-i18n="how.step3_desc">Transport, accommodation, food, entry tickets, and 10% emergency reserve — computed with exact Decimal arithmetic.</p>
+          </div>
+          <div class="how-step">
+            <div class="how-step-num">4</div>
+            <div class="how-step-title" data-i18n="how.step4_title">Feasibility Score & Replan</div>
+            <p class="how-step-desc" data-i18n="how.step4_desc">0–100 feasibility score across budget, schedule, route, preference, and data confidence. Adjust with one click.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Core Entry Cards -->
+    <section class="entry-cards-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag" data-i18n="portals.tag">Direct Portals</div>
+          <h2 class="section-title" data-i18n="portals.title">Where Would You Like to Begin?</h2>
+          <p class="section-desc" data-i18n="portals.desc">Each card opens a fully functioning module built specifically for Karnataka travel.</p>
+        </div>
+        <div class="entry-cards-grid">
+          <div class="entry-card" data-nav="journey" tabindex="0" role="button">
+            <div>
+              <div class="entry-card-icon">🧭</div>
+              <h3 class="entry-card-title" data-i18n="card.plan_title">Plan a Journey</h3>
+              <p class="entry-card-desc" data-i18n="card.plan_desc">4-step guided DNA wizard — budget, pace, and theme validation before route generation.</p>
+            </div>
+            <span class="entry-card-cta" data-i18n="card.plan_cta">Open Planner <span>→</span></span>
+          </div>
+          <div class="entry-card" data-nav="map" tabindex="0" role="button">
+            <div>
+              <div class="entry-card-icon">🗺️</div>
+              <h3 class="entry-card-title" data-i18n="card.map_title">Explore Karnataka Atlas</h3>
+              <p class="entry-card-desc" data-i18n="card.map_desc">Interactive Leaflet map with photo popups, verified fees, driving directions, and regional filters.</p>
+            </div>
+            <span class="entry-card-cta" data-i18n="card.map_cta">Open Atlas <span>→</span></span>
+          </div>
+          <div class="entry-card" data-nav="journey" tabindex="0" role="button">
+            <div>
+              <div class="entry-card-icon">💰</div>
+              <h3 class="entry-card-title" data-i18n="card.budget_title">Budget-Validated Travel</h3>
+              <p class="entry-card-desc" data-i18n="card.budget_desc">Decimal-exact engine with labeled cost lines, 10% safety reserve, and live budget slider simulator.</p>
+            </div>
+            <span class="entry-card-cta" data-i18n="card.budget_cta">Test Budget <span>→</span></span>
+          </div>
+          <div class="entry-card" data-nav="kannada" tabindex="0" role="button">
+            <div>
+              <div class="entry-card-icon">🗣️</div>
+              <h3 class="entry-card-title" data-i18n="card.companion_title">Kannada Culture Companion</h3>
+              <p class="entry-card-desc" data-i18n="card.companion_desc">42 verified daily expressions with audio pronunciation and scripted local market dialogues.</p>
+            </div>
+            <span class="entry-card-cta" data-i18n="card.companion_cta">Learn Phrases <span>→</span></span>
+          </div>
+          <div class="entry-card" data-nav="saved" tabindex="0" role="button">
+            <div>
+              <div class="entry-card-icon">📌</div>
+              <h3 class="entry-card-title" data-i18n="card.saved_title">Continue a Saved Trip</h3>
+              <p class="entry-card-desc" data-i18n="card.saved_desc">Reload itineraries from SQLite, duplicate plans, export to CSV, or share a trip ID.</p>
+            </div>
+            <span class="entry-card-cta" data-i18n="card.saved_cta">View Journeys <span>→</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regional Showcase -->
+    <section class="regional-showcase-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag" data-i18n="showcase.tag">Curated Regions</div>
+          <h2 class="section-title" data-i18n="showcase.title">Discover Karnataka By Corridors</h2>
+          <p class="section-desc" data-i18n="showcase.desc">Destinations clustered by region — eliminates backtracking and maximises your daily active window.</p>
+        </div>
+        <div class="regions-tabs">
+          <button class="region-tab-btn active" data-region="North Karnataka" data-i18n="showcase.tab_north" onclick="App.filterRegionTab('North Karnataka', this)">North Heritage Belt</button>
+          <button class="region-tab-btn" data-region="South Karnataka" data-i18n="showcase.tab_south" onclick="App.filterRegionTab('South Karnataka', this)">South Royal Plains</button>
+          <button class="region-tab-btn" data-region="Malnad" data-i18n="showcase.tab_malnad" onclick="App.filterRegionTab('Malnad', this)">Malnad & Western Ghats</button>
+          <button class="region-tab-btn" data-region="Coastal Karnataka" data-i18n="showcase.tab_coastal" onclick="App.filterRegionTab('Coastal Karnataka', this)">Karavali Coast</button>
+          <button class="region-tab-btn" data-region="Central Karnataka" data-i18n="showcase.tab_central" onclick="App.filterRegionTab('Central Karnataka', this)">Central Deccan</button>
+        </div>
+        <div id="region-cards-grid" class="region-cards-grid"></div>
+      </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag" data-i18n="comp.tag">The Architecture Difference</div>
+          <h2 class="section-title" data-i18n="comp.title">Why a Deterministic Reality Engine?</h2>
+          <p class="section-desc" data-i18n="comp.desc">Travel planning requires physical feasibility, not imaginative chat text.</p>
+        </div>
+        <div class="comparison-grid">
+          <div class="comp-box comp-box-trad">
+            <h3 style="font-size: 20px; color: var(--danger); margin-bottom: 8px;" data-i18n="comp.trad_title">✕ Generic AI Chatbot Planners</h3>
+            <p style="font-size: 13px; color: var(--charcoal-muted);" data-i18n="comp.trad_sub">LLMs generating itineraries without grounding in verified data:</p>
+            <ul class="comp-list">
+              <li class="comp-list-item"><span style="color:var(--danger);font-size:18px;line-height:1;">✕</span><span data-i18n="comp.trad_item1"><strong>Hallucinates Prices:</strong> Invents hotel tariffs and monument entry fees with high confidence.</span></li>
+              <li class="comp-list-item"><span style="color:var(--danger);font-size:18px;line-height:1;">✕</span><span data-i18n="comp.trad_item2"><strong>Impossible Schedules:</strong> Plans 6 attractions across 400 km in a single afternoon.</span></li>
+              <li class="comp-list-item"><span style="color:var(--danger);font-size:18px;line-height:1;">✕</span><span data-i18n="comp.trad_item3"><strong>Silent Over-Budget:</strong> Exceeds your stated budget without a single warning.</span></li>
+              <li class="comp-list-item"><span style="color:var(--danger);font-size:18px;line-height:1;">✕</span><span data-i18n="comp.trad_item4"><strong>Flat-Earth Routes:</strong> Ignores Western Ghats mountain topography and real road detour factors.</span></li>
+            </ul>
+          </div>
+          <div class="comp-box comp-box-namma">
+            <h3 style="font-size: 20px; color: var(--forest); margin-bottom: 8px;" data-i18n="comp.np_title">✓ Namma Payana Reality Engine</h3>
+            <p style="font-size: 13px; color: var(--charcoal-muted);" data-i18n="comp.np_sub">Pure Python deterministic validation — checks its own output at every step:</p>
+            <ul class="comp-list">
+              <li class="comp-list-item"><span style="color:var(--forest);font-size:18px;font-weight:700;line-height:1;">✓</span><span data-i18n="comp.np_item1"><strong>Verified Database:</strong> Only destinations from <code>data/destinations.json</code> are permitted — no invented places.</span></li>
+              <li class="comp-list-item"><span style="color:var(--forest);font-size:18px;font-weight:700;line-height:1;">✓</span><span data-i18n="comp.np_item2"><strong>Schedule & Pacing:</strong> Relaxed ≤7h, Balanced ≤9h, Packed ≤11h active window enforced per day.</span></li>
+              <li class="comp-list-item"><span style="color:var(--forest);font-size:18px;font-weight:700;line-height:1;">✓</span><span data-i18n="comp.np_item3"><strong>Exact Decimal Arithmetic:</strong> Over-budget is flagged with the exact rupee gap and an automated fix suggestion.</span></li>
+              <li class="comp-list-item"><span style="color:var(--forest);font-size:18px;font-weight:700;line-height:1;">✓</span><span data-i18n="comp.np_item4"><strong>Ghats Road Factor:</strong> 1.3× road detour buffer applied to every intercity leg through Karnataka.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- VIEW 2: JOURNEY DNA BUILDER                      -->
+  <!-- ════════════════════════════════════════════════ -->
+  <section id="view-journey" class="view-section">
+    <div class="container">
+      <div class="stepper-wrap">
+        <div class="step-indicator" id="step-indicator">
+          <div id="step-dot-1" class="step-dot active" data-i18n="step.dot1">1. Basics</div>
+          <div id="step-dot-2" class="step-dot" data-i18n="step.dot2">2. Budget</div>
+          <div id="step-dot-3" class="step-dot" data-i18n="step.dot3">3. Pace & Transit</div>
+          <div id="step-dot-4" class="step-dot" data-i18n="step.dot4">4. Themes & Interests</div>
+        </div>
+
+        <!-- Step 1: Basics -->
+        <div id="step-content-1">
+          <h2 style="font-size: 26px; margin-bottom: 22px; color: var(--earth-red);" data-i18n="step1.heading">Step 1: Your Journey Origin &amp; Duration</h2>
+          <div class="form-group">
+            <label class="form-label" for="input-start-city" data-i18n="step1.label_hub">Start Hub — Karnataka Transit Origin</label>
+            <select id="input-start-city" class="form-select">
+              <option value="Bengaluru" selected data-i18n="step1.hub_bengaluru">Bengaluru (Kempegowda Hub)</option>
+              <option value="Mysuru" data-i18n="step1.hub_mysuru">Mysuru (Palace City)</option>
+              <option value="Mangaluru" data-i18n="step1.hub_mangaluru">Mangaluru (Coastal Gateway)</option>
+              <option value="Hubballi" data-i18n="step1.hub_hubballi">Hubballi-Dharwad (North Corridor)</option>
+              <option value="Belagavi" data-i18n="step1.hub_belagavi">Belagavi (Western Border)</option>
+              <option value="Kalaburagi" data-i18n="step1.hub_kalaburagi">Kalaburagi (Deccan Heritage)</option>
+              <option value="Shivamogga" data-i18n="step1.hub_shivamogga">Shivamogga (Malnad Gateway)</option>
+            </select>
+            <div class="form-help" data-i18n="step1.help_hub">Routes are computed from this hub to eliminate backtracking. All distances use verified road data with 1.3× Ghats topography factor.</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+            <div class="form-group">
+              <label class="form-label" for="input-days" data-i18n="step1.label_days">Trip Duration (Days: 1 to 14)</label>
+              <input id="input-days" type="number" class="form-input" min="1" max="14" value="3">
+              <div class="form-help" data-i18n="step1.help_days">Each day: 08:00–20:00 active window (12h).</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-travellers" data-i18n="step1.label_travellers">Number of Travellers (1 to 20)</label>
+              <input id="input-travellers" type="number" class="form-input" min="1" max="20" value="2">
+              <div class="form-help" data-i18n="step1.help_travellers">Affects accommodation, food, and ticket costs.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Budget -->
+        <div id="step-content-2" style="display: none;">
+          <h2 style="font-size: 26px; margin-bottom: 22px; color: var(--earth-red);" data-i18n="step2.heading">Step 2: Budget Definition</h2>
+          <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px;">
+            <div class="form-group">
+              <label class="form-label" for="input-budget-amt" data-i18n="step2.label_budget">Budget Amount (₹ INR)</label>
+              <input id="input-budget-amt" type="number" class="form-input" min="500" step="500" value="8000">
+              <div class="form-help" data-i18n="step2.help_budget">Deterministic engine guarantees zero silent over-budgeting. A 10% emergency reserve is always included.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-budget-scope" data-i18n="step2.label_scope">Scope</label>
+              <select id="input-budget-scope" class="form-select">
+                <option value="total" selected data-i18n="step2.opt_scope_total">Total Group Budget</option>
+                <option value="per_person" data-i18n="step2.opt_scope_pp">Per Person Budget</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="step2.label_style">Travel Style (Benchmarked against verified Karnataka rates)</label>
+            <div class="chip-group" data-field="style">
+              <div class="chip selected" data-value="economical" data-i18n="step2.chip_eco">Economical (Lodges, Darshinis, KSRTC)</div>
+              <div class="chip" data-value="moderate" data-i18n="step2.chip_mod">Moderate (Homestays, Regional Thalis, Cabs)</div>
+              <div class="chip" data-value="luxury" data-i18n="step2.chip_lux">Luxury (Heritage Resorts, Private AC Cab)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Pace & Transport -->
+        <div id="step-content-3" style="display: none;">
+          <h2 style="font-size: 26px; margin-bottom: 22px; color: var(--earth-red);" data-i18n="step3.heading">Step 3: Pacing &amp; Transit Mode</h2>
+          <div class="form-group">
+            <label class="form-label" data-i18n="step3.label_pace">Daily Pace &amp; Capacity</label>
+            <div class="chip-group" data-field="pace">
+              <div class="chip selected" data-value="relaxed" data-i18n="step3.chip_pace_rel">Relaxed (Max 2 stops/day, ≤7h active)</div>
+              <div class="chip" data-value="balanced" data-i18n="step3.chip_pace_bal">Balanced (Max 3 stops/day, ≤9h active)</div>
+              <div class="chip" data-value="packed" data-i18n="step3.chip_pace_pac">Packed (Max 4 stops/day, ≤11h active)</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="step3.label_transit">Primary Transit Mode</label>
+            <div class="chip-group" data-field="transport">
+              <div class="chip selected" data-value="bus" data-i18n="step3.chip_transit_bus">KSRTC Bus (40 km/h avg)</div>
+              <div class="chip" data-value="car" data-i18n="step3.chip_transit_car">Private Car (50 km/h avg)</div>
+              <div class="chip" data-value="train" data-i18n="step3.chip_transit_train">Train (45 km/h avg)</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="step3.label_diet">Dietary Preference</label>
+            <div class="chip-group" data-field="diet">
+              <div class="chip selected" data-value="vegetarian" data-i18n="step3.chip_diet_veg">Pure Vegetarian (Udupi / Khanavali)</div>
+              <div class="chip" data-value="non_vegetarian" data-i18n="step3.chip_diet_nonveg">Regional Speciality (Ghee Roast / Donne Biryani)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Themes -->
+        <div id="step-content-4" style="display: none;">
+          <h2 style="font-size: 26px; margin-bottom: 22px; color: var(--earth-red);" data-i18n="step4.heading">Step 4: Travel Themes &amp; Special Needs</h2>
+          <div class="form-group">
+            <label class="form-label" data-i18n="step4.label_themes">Select Travel Themes (multi-select)</label>
+            <div class="chip-group multi-select" data-field="interests">
+              <div class="chip selected" data-value="heritage" data-i18n="step4.chip_theme_heritage">Heritage &amp; Monuments</div>
+              <div class="chip selected" data-value="food" data-i18n="step4.chip_theme_food">Authentic Gastronomy</div>
+              <div class="chip" data-value="nature" data-i18n="step4.chip_theme_nature">Nature &amp; Waterfalls</div>
+              <div class="chip" data-value="coastal" data-i18n="step4.chip_theme_coastal">Coastal &amp; Beaches</div>
+              <div class="chip" data-value="adventure" data-i18n="step4.chip_theme_adv">Trekking &amp; Wildlife</div>
+              <div class="chip" data-value="architecture" data-i18n="step4.chip_theme_arch">Hoysala / Chalukya Architecture</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">
+              <label class="form-label" style="margin-bottom:0;" data-i18n="step4.label_must_visit">Must-Visit Destinations (optional)</label>
+              <span id="must-visit-count-badge" class="badge badge-sourced" style="font-size:11px;">0 selected</span>
+            </div>
+            <div id="must-visit-list" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; min-height: 28px;"></div>
+
+            <!-- Quick Add Famous Landmarks -->
+            <div style="margin-top: 12px;">
+              <div style="font-size: 12px; font-weight: 600; color: var(--charcoal-muted); margin-bottom: 6px;" data-i18n="step4.popular_picks">
+                🔥 Quick-Add Iconic Destinations:
+              </div>
+              <div id="quick-popular-destinations" style="display: flex; gap: 8px; flex-wrap: wrap;"></div>
+            </div>
+
+            <!-- Browse & Select Button -->
+            <div style="margin-top: 12px; display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+              <button type="button" class="btn-secondary" id="btn-toggle-dest-picker" style="font-size: 13px; padding: 9px 16px; display:inline-flex; align-items:center; gap:8px;">
+                <span>✨</span> <span data-i18n="step4.btn_browse_places">Browse &amp; Pick All 52 Destinations</span>
+              </button>
+              <button type="button" id="btn-clear-must-visit" class="btn-secondary" onclick="App.clearAllMustVisit()" style="display:none; font-size:12px; padding:8px 14px;" data-i18n="step4.btn_clear_all">
+                Clear All
+              </button>
+            </div>
+
+            <!-- Expandable Destination Selector Drawer -->
+            <div id="must-visit-picker-panel" class="dest-picker-panel" style="display: none; margin-top: 16px;">
+              <div class="dest-picker-header">
+                <div>
+                  <h4 style="font-size: 16px; color: var(--earth-red); margin-bottom: 2px;" data-i18n="step4.browse_modal_title">Karnataka Destinations Catalog</h4>
+                  <p style="font-size: 12px; color: var(--charcoal-muted); margin: 0;" data-i18n="step4.browse_modal_sub">Select monuments, temples, beaches, or waterfalls to guarantee in your itinerary.</p>
+                </div>
+                <button type="button" class="icon-tool-btn" onclick="App.toggleMustVisitPicker()" title="Close picker">✕</button>
+              </div>
+
+              <div class="dest-picker-toolbar">
+                <input id="picker-search-input" type="text" class="form-input" placeholder="Search by destination name, district…" data-i18n-ph="step4.search_places_ph" style="font-size: 13px; padding: 8px 12px; flex: 1;" oninput="App.filterMustVisitPicker()">
+                <select id="picker-cat-filter" class="form-select" style="font-size: 13px; padding: 8px 12px; max-width: 170px;" onchange="App.filterMustVisitPicker()">
+                  <option value="all" data-i18n="map.opt_cat_all">All Categories</option>
+                  <option value="heritage" data-i18n="map.opt_cat_heritage">Heritage &amp; Temples</option>
+                  <option value="nature" data-i18n="map.opt_cat_nature">Nature &amp; Waterfalls</option>
+                  <option value="coastal" data-i18n="map.opt_cat_coastal">Coastal &amp; Beaches</option>
+                  <option value="adventure" data-i18n="map.opt_cat_adv">Adventure &amp; Wildlife</option>
+                  <option value="architecture" data-i18n="map.opt_cat_arch">Architecture</option>
+                </select>
+              </div>
+
+              <div id="picker-dest-grid" class="dest-picker-grid"></div>
+
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px solid var(--border-color);">
+                <span id="picker-status-count" style="font-size:12px; color:var(--forest); font-weight:600;"></span>
+                <button type="button" class="btn-primary" style="padding: 7px 18px; font-size: 13px;" onclick="App.toggleMustVisitPicker()" data-i18n="step4.btn_done_places">Done Selecting ✓</button>
+              </div>
+            </div>
+
+            <div class="form-help" data-i18n="step4.help_must_visit">Selected destinations are guaranteed to be scheduled into your itinerary by the Reality Engine.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="step4.label_access">Special Accessibility Requirement</label>
+            <div class="chip-group multi-select" data-field="accessibility">
+              <div class="chip" data-value="wheelchair" data-i18n="step4.chip_access_wheelchair">Wheelchair / Flat Ground Preferred</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="step-nav">
+          <button id="btn-step-prev" class="btn-secondary" data-i18n="wizard.btn_prev">← Previous</button>
+          <button id="btn-step-next" class="btn-primary" data-i18n="wizard.btn_next">Next Step →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- VIEW 3: RESULTS                                  -->
+  <!-- ════════════════════════════════════════════════ -->
+  <section id="view-results" class="view-section">
+    <div class="container">
+      <!-- ── Sticky Budget Banner ────────────────────────────── -->
+      <div id="res-budget-banner" style="background:var(--ivory-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:14px 20px;margin-bottom:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;box-shadow:var(--shadow-sm);">
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+          <div>
+            <div style="font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--charcoal-muted);font-weight:700;">Total Trip Cost</div>
+            <div id="banner-total-cost" style="font-size:26px;font-weight:800;color:var(--earth-red);font-family:var(--font-serif);line-height:1.1;">—</div>
+          </div>
+          <div style="width:1px;height:36px;background:var(--border-color);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--charcoal-muted);font-weight:700;">Your Budget</div>
+            <div id="banner-allocated" style="font-size:20px;font-weight:700;color:var(--charcoal);line-height:1.1;">—</div>
+          </div>
+          <div>
+            <span id="banner-status-pill" style="font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;">—</span>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div id="banner-mini-bar" style="width:160px;height:8px;background:var(--border-color);border-radius:4px;overflow:hidden;">
+            <div id="banner-mini-fill" style="height:100%;width:0%;background:var(--forest);border-radius:4px;transition:width 0.6s ease;"></div>
+          </div>
+          <span id="banner-pct" style="font-size:11px;color:var(--charcoal-muted);font-weight:600;min-width:40px;">0%</span>
+        </div>
+      </div>
+
+      <div class="results-header">
+        <div>
+          <span id="ai-notice-banner" class="badge badge-sourced" style="margin-bottom: 10px;" data-i18n="res.engine_banner">Deterministic Engine</span>
+          <h1 style="font-size: 34px; color: var(--earth-red); margin-bottom: 6px;" data-i18n="res.heading">Your Verified Karnataka Itinerary</h1>
+          <p style="color: var(--charcoal-soft); font-size: 15px;" data-i18n="res.sub">Every timing and expense item computed without hallucination. Feasibility score guaranteed.</p>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button type="button" id="btn-res-map" class="btn-secondary" data-i18n="res.btn_map">🗺️ View on Map</button>
+          <button type="button" id="btn-res-print" class="btn-secondary" data-i18n="res.btn_print">🖨️ Print / PDF</button>
+          <button type="button" id="btn-res-export" class="btn-secondary" data-i18n="res.btn_export">📊 Export CSV</button>
+          <button type="button" id="btn-res-save" class="btn-primary" data-i18n="res.btn_save">💾 Save Journey</button>
+        </div>
+      </div>
+
+      <div class="results-grid">
+        <!-- Left: Timeline -->
+        <div>
+          <div class="why-plan-card">
+            <h4 style="font-size: 14px; color: var(--charcoal); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.8px; font-family: var(--font-display);" data-i18n="res.why_plan_title">Why This Plan</h4>
+            <div id="res-why-plan-items"></div>
+          </div>
+
+          <div id="res-days-timeline"></div>
+
+          <!-- Replanner -->
+          <div class="day-timeline-card" style="border-top: 4px solid var(--gold);">
+            <h3 style="font-size: 19px; margin-bottom: 8px;" data-i18n="res.replanner_title">Journey Replanner</h3>
+            <p style="font-size: 13px; color: var(--charcoal-muted); margin-bottom: 14px;" data-i18n="res.replanner_sub">
+              Adjust parameters with a natural language instruction — the Reality Engine re-validates every constraint:
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+              <button type="button" class="chip" onclick="App.applyReplanPrompt('cut budget by 1500')" data-i18n="res.chip_cut_budget">✂️ Cut budget ₹1,500</button>
+              <button type="button" class="chip" onclick="App.applyReplanPrompt('make it more relaxed')" data-i18n="res.chip_more_relaxed">🧘 More relaxed</button>
+              <button type="button" class="chip" onclick="App.applyReplanPrompt('add food experience')" data-i18n="res.chip_add_food">🍲 Add food stop</button>
+              <button type="button" class="chip" onclick="App.applyReplanPrompt('add nature destination')" data-i18n="res.chip_add_nature">🌿 Add nature</button>
+              <button type="button" class="chip" onclick="App.applyReplanPrompt('make it packed')" data-i18n="res.chip_packed">⚡ Packed pace</button>
+            </div>
+            <form id="replan-form" style="display: flex; gap: 10px;">
+              <input id="replan-instruction-input" type="text" class="form-input" placeholder="e.g. 'increase budget by 2000' or 'add coastal destination'…" data-i18n-ph="res.replan_placeholder" style="flex-grow: 1;">
+              <button type="submit" class="btn-primary" style="padding: 11px 20px; font-size: 13px; white-space: nowrap;" data-i18n="res.btn_replan">Replan</button>
+            </form>
+            <div id="replan-diff-output" style="margin-top: 16px;"></div>
+          </div>
+        </div>
+
+        <!-- Right: Feasibility + Budget -->
+        <div>
+          <div class="feasibility-panel">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px;">
+              <h3 style="font-size: 19px;" data-i18n="res.feasibility_title">Trip Feasibility</h3>
+              <span id="res-feasibility-status" class="badge badge-feasible">FEASIBLE</span>
+            </div>
+
+            <!-- ① BUDGET SUMMARY — shown first for instant clarity -->
+            <div id="res-budget-summary" style="margin-bottom: 18px;"></div>
+
+            <!-- Budget Simulator -->
+            <div class="budget-simulator-card" style="margin-bottom: 18px;">
+              <h4 style="font-size: 15px; margin-bottom: 5px;" data-i18n="res.budget_sim_title">Budget Simulator</h4>
+              <p style="font-size: 12px; color: var(--charcoal-muted); margin-bottom: 14px;" data-i18n="res.budget_sim_sub">Slide to test alternate budgets — feasibility re-runs in real-time:</p>
+              <div class="budget-slider-wrap">
+                <input id="budget-slider" type="range" class="budget-slider" min="2000" max="30000" step="500">
+                <div style="display: flex; justify-content: space-between; font-size: 12px; margin-top: 6px;">
+                  <span data-i18n="res.allocated">Allocated:</span>
+                  <strong id="slider-budget-val" style="color: var(--earth-red);">₹8,000</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- ② FEASIBILITY SCORE — below budget -->
+            <div style="border-top: 1px solid var(--border-color); padding-top: 16px; margin-bottom: 12px;">
+              <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--charcoal-muted); font-weight: 700; margin-bottom: 8px;" data-i18n="res.feasibility_score_label">Feasibility Score</div>
+              <div class="feasibility-score-hero" style="margin-bottom: 10px;">
+                <span id="res-feasibility-score" class="score-num">0</span>
+                <span class="score-total">/ 100</span>
+              </div>
+              <div class="feasibility-bar" style="margin-bottom: 14px;">
+                <div id="res-feasibility-bar" class="feasibility-bar-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- ③ COMPONENT BREAKDOWN -->
+            <div id="res-feasibility-components" style="margin-bottom: 14px;"></div>
+
+            <!-- ④ ISSUES & SUGGESTIONS -->
+            <div id="res-feasibility-issues"></div>
+
+            <div style="font-size: 11px; color: var(--charcoal-muted); margin-top: 16px; font-style: italic; line-height: 1.4;" data-i18n="res.feasibility_disclaimer">
+              Planning heuristic based on verified field data. On-ground conditions may vary.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- VIEW 4: KARNATAKA ATLAS MAP                     -->
+  <!-- ════════════════════════════════════════════════ -->
+  <section id="view-map" class="view-section">
+    <div class="container">
+      <div style="margin-bottom: 22px;">
+        <div class="section-tag" style="text-align: left; margin-bottom: 6px;" data-i18n="map.tag">Interactive Geographic Atlas</div>
+        <h1 style="font-size: 34px; color: var(--earth-red); margin-bottom: 6px;" data-i18n="map.heading">Karnataka Geographic Atlas</h1>
+        <p style="color: var(--charcoal-soft); font-size: 15px;" data-i18n="map.sub">
+          Click any pin to view photos, Kannada titles, verified entry fees, and Google Maps directions.
+          Filter by region or category below.
+        </p>
+      </div>
+
+      <!-- Map Controls -->
+      <div class="map-filter-bar">
+        <select id="map-region-filter" class="form-select" style="max-width: 200px; font-size: 13px; padding: 9px 12px;">
+          <option value="all" data-i18n="map.opt_region_all">All Regions</option>
+          <option value="North Karnataka" data-i18n="map.opt_region_north">North Karnataka</option>
+          <option value="South Karnataka" data-i18n="map.opt_region_south">South Karnataka</option>
+          <option value="Coastal Karnataka" data-i18n="map.opt_region_coastal">Coastal Karnataka</option>
+          <option value="Malnad" data-i18n="map.opt_region_malnad">Malnad</option>
+          <option value="Central Karnataka" data-i18n="map.opt_region_central">Central Karnataka</option>
+        </select>
+
+        <select id="map-category-filter" class="form-select" style="max-width: 200px; font-size: 13px; padding: 9px 12px;">
+          <option value="all" data-i18n="map.opt_cat_all">All Categories</option>
+          <option value="heritage" data-i18n="map.opt_cat_heritage">Heritage &amp; Temples</option>
+          <option value="nature" data-i18n="map.opt_cat_nature">Nature &amp; Waterfalls</option>
+          <option value="coastal" data-i18n="map.opt_cat_coastal">Coastal &amp; Beaches</option>
+          <option value="adventure" data-i18n="map.opt_cat_adv">Adventure &amp; Wildlife</option>
+          <option value="architecture" data-i18n="map.opt_cat_arch">Architecture</option>
+        </select>
+
+        <button class="btn-secondary" onclick="KarnatakaMap.resetView()" style="padding: 9px 16px; font-size: 13px;" data-i18n="map.btn_reset">↺ Reset</button>
+
+        <span id="map-pins-count" style="font-size: 13px; font-weight: 600; color: var(--forest); margin-left: auto;">
+          24 landmarks shown
+        </span>
+      </div>
+
+      <div id="leaflet-map" aria-label="Interactive map of Karnataka destinations"></div>
+
+      <!-- Legend -->
+      <div style="display: flex; gap: 20px; margin-top: 14px; flex-wrap: wrap;">
+        <span style="font-size: 12px; color: var(--charcoal-muted); display: flex; align-items: center; gap: 6px;">
+          <span style="width: 12px; height: 12px; border-radius: 50%; background: #8B2E1F; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px #8B2E1F;"></span>
+          <span data-i18n="map.opt_region_south">South Karnataka</span>
+        </span>
+        <span style="font-size: 12px; color: var(--charcoal-muted); display: flex; align-items: center; gap: 6px;">
+          <span style="width: 12px; height: 12px; border-radius: 50%; background: #C9A24B; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px #C9A24B;"></span>
+          <span data-i18n="map.opt_region_north">North Karnataka</span>
+        </span>
+        <span style="font-size: 12px; color: var(--charcoal-muted); display: flex; align-items: center; gap: 6px;">
+          <span style="width: 12px; height: 12px; border-radius: 50%; background: #2F7D4F; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px #2F7D4F;"></span>
+          <span data-i18n="map.opt_region_coastal">Coastal Karnataka</span>
+        </span>
+        <span style="font-size: 12px; color: var(--charcoal-muted); display: flex; align-items: center; gap: 6px;">
+          <span style="width: 12px; height: 12px; border-radius: 50%; background: #1F3528; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px #1F3528;"></span>
+          <span data-i18n="map.opt_region_malnad">Malnad / Western Ghats</span>
+        </span>
+        <span style="font-size: 12px; color: var(--charcoal-muted); display: flex; align-items: center; gap: 6px;">
+          <span style="width: 12px; height: 12px; border-radius: 50%; background: #A63A28; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px #A63A28;"></span>
+          <span data-i18n="map.opt_region_central">Central Karnataka</span>
+        </span>
+      </div>
+
+      <!-- Atlas Landmark Directory & Gallery -->
+      <div class="atlas-gallery-section">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+          <div>
+            <h3 style="font-size: 22px; color: var(--earth-red); margin-bottom: 4px;" data-i18n="map.gallery_title">Landmark Directory &amp; Photography</h3>
+            <p style="font-size: 13px; color: var(--charcoal-muted); margin: 0;" data-i18n="map.gallery_sub">Browse all verified destinations across Karnataka. Click any landmark to focus it on the Atlas.</p>
+          </div>
+          <span id="atlas-gallery-count" class="badge badge-sourced" style="font-size: 12px; padding: 4px 12px;"></span>
+        </div>
+        <div id="atlas-landmarks-grid" class="atlas-landmarks-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- VIEW 5: KANNADA COMPANION                        -->
+  <!-- ════════════════════════════════════════════════ -->
+  <section id="view-kannada" class="view-section">
+    <div class="container">
+      <div style="margin-bottom: 28px;">
+        <div class="section-tag" style="text-align: left; margin-bottom: 6px;" data-i18n="kc.tag">Cultural Bridge</div>
+        <h1 style="font-size: 34px; color: var(--earth-red); margin-bottom: 6px;" data-i18n="kc.heading">Kannada Companion &bull; ಕನ್ನಡ ಸಹಚರ</h1>
+        <p style="color: var(--charcoal-soft); font-size: 15px;" data-i18n="kc.sub">
+          42 verified daily expressions with voice pronunciation and interactive scripted local dialogues.
+        </p>
+      </div>
+
+      <!-- Live Multilingual Translator & Speech Studio -->
+      <div class="translator-box">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
+          <div>
+            <h3 style="font-size: 21px; color: var(--earth-red); margin-bottom: 4px; display:flex; align-items:center; gap:8px;" data-i18n="kc.translator_title">
+              <span>🗣️</span> <span>Live Translator &amp; Speech Studio</span>
+            </h3>
+            <p style="font-size: 13px; color: var(--charcoal-muted); margin: 0;" data-i18n="kc.translator_sub">
+              Translate sentences from English, Hindi, Telugu, Tamil, or Malayalam into verified Kannada with human-like audio voiceover.
+            </p>
+          </div>
+          <div class="trans-lang-selector-wrap">
+            <span style="font-size:12px; color:var(--charcoal-muted); font-weight:600;" data-i18n="kc.source_lang">From:</span>
+            <select id="kc-source-lang" class="form-select" style="font-size: 13px; padding: 7px 12px; min-width: 140px;">
+              <option value="en" selected>English</option>
+              <option value="hi">हिन्दी (Hindi)</option>
+              <option value="te">తెలుగు (Telugu)</option>
+              <option value="ta">தமிழ் (Tamil)</option>
+              <option value="ml">മലയാളം (Malayalam)</option>
+            </select>
+            <span style="color:var(--gold); font-weight:700;">➔</span>
+            <span class="badge badge-sourced" style="background:var(--forest); color:#fff; font-size:12px; padding:6px 12px;">ಕನ್ನಡ (Kannada)</span>
+          </div>
+        </div>
+
+        <!-- Input Box -->
+        <div class="trans-input-wrap">
+          <textarea id="kc-translate-input" class="trans-textarea" rows="2" placeholder="Type words or questions (e.g. 'How much is the auto fare?', 'Where is the bus stand?')" data-i18n-ph="kc.translate_ph"></textarea>
+          <div class="trans-actions-bar">
+            <button type="button" class="btn-secondary" style="padding: 7px 14px; font-size: 12px;" onclick="KannadaCompanion.clearTranslator()" data-i18n="kc.clear">
+              Clear
+            </button>
+            <button id="kc-btn-translate" type="button" class="btn-primary" style="padding: 9px 22px; font-size: 13px; display:inline-flex; align-items:center; gap:6px;" onclick="KannadaCompanion.translateText()">
+              <span>✨</span> <span data-i18n="kc.btn_translate">Translate to Kannada</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Travel Phrases -->
+        <div style="margin-top: 14px;">
+          <div style="font-size: 12px; font-weight: 600; color: var(--charcoal-muted); margin-bottom: 6px;" data-i18n="kc.quick_phrases_title">
+            💡 Tap common tourist phrases to translate &amp; hear:
+          </div>
+          <div class="quick-phrases-chips">
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('Where is the bus stand?')">🚌 Bus stand?</button>
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('How much is the auto fare?')">🛺 Auto fare?</button>
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('Please turn on the meter')">⏱️ Put meter</button>
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('Where can i get water?')">💧 Drinking water?</button>
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('Please give one plate idli vada')">🍽️ Idli Vada</button>
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('One cup filter coffee please')">☕ Filter Coffee</button>
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('How much does this cost?')">🏷️ Price?</button>
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('Can you please help me?')">🤝 Help me</button>
+            <button type="button" class="quick-chip" onclick="KannadaCompanion.applyQuickPhrase('Thank you very much')">🙏 Thank you</button>
+          </div>
+        </div>
+
+        <!-- Translation Result Box -->
+        <div id="kc-translator-result" style="display: none; margin-top: 16px;"></div>
+      </div>
+
+      <!-- Dialogue Practice -->
+      <div class="dialogue-box">
+        <h3 style="font-size: 20px; color: var(--earth-red); margin-bottom: 8px;" data-i18n="kc.practice_title">Practice a Conversation</h3>
+        <p style="font-size: 13px; color: var(--charcoal-muted); margin-bottom: 18px;" data-i18n="kc.practice_sub">
+          Step through authentic everyday Karnataka scenarios — Udupi darshini, auto-rickshaw fare negotiation, market shopping.
+        </p>
+        <div id="dialogue-practice-container"></div>
+      </div>
+
+      <!-- Filters -->
+      <div class="phrases-filter-bar">
+        <input id="phrase-search" type="text" class="form-input" placeholder="Search in English, Kannada, or transliteration…" data-i18n-ph="kc.search_ph" style="max-width: 360px; padding: 11px 14px;">
+        <select id="scenario-filter" class="form-select" style="max-width: 200px;">
+          <option value="all" data-i18n="kc.sc_all">All Scenarios</option>
+          <option value="greetings" data-i18n="kc.sc_greetings">Greetings</option>
+          <option value="food" data-i18n="kc.sc_food">Food &amp; Darshini</option>
+          <option value="transport" data-i18n="kc.sc_transport">Transport &amp; Auto</option>
+          <option value="directions" data-i18n="kc.sc_directions">Directions</option>
+          <option value="prices" data-i18n="kc.sc_prices">Prices &amp; Payments</option>
+          <option value="stay" data-i18n="kc.sc_stay">Stay &amp; Lodging</option>
+          <option value="help" data-i18n="kc.sc_help">Help &amp; Medical</option>
+          <option value="signs" data-i18n="kc.sc_signs">Signs &amp; Notices</option>
+        </select>
+      </div>
+
+      <div id="phrases-grid" class="phrases-grid"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- VIEW 6: SAVED TRIPS                              -->
+  <!-- ════════════════════════════════════════════════ -->
+  <section id="view-saved" class="view-section">
+    <div class="container">
+
+      <!-- Header -->
+      <div style="margin-bottom: 28px;">
+        <div class="section-tag" style="text-align:left; margin-bottom: 6px;" data-i18n="saved.tag">Your Journeys</div>
+        <h1 style="font-size: 34px; color: var(--earth-red); margin-bottom: 6px;" data-i18n="saved.heading">Saved Journeys</h1>
+        <p style="color: var(--charcoal-soft); font-size: 15px;" data-i18n="saved.sub">
+          Trips stored securely in the local SQLite database. Survives restarts — reload, duplicate, or export any time.
+        </p>
+      </div>
+
+      <!-- Feature Chips -->
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px;">
+        <div class="saved-feature-chip">
+          <span style="font-size: 16px;">🔒</span>
+          <div>
+            <div style="font-size: 12px; font-weight: 700; color: var(--charcoal);">Offline Storage</div>
+            <div style="font-size: 11px; color: var(--charcoal-muted);">SQLite — survives restarts</div>
+          </div>
+        </div>
+        <div class="saved-feature-chip">
+          <span style="font-size: 16px;">📋</span>
+          <div>
+            <div style="font-size: 12px; font-weight: 700; color: var(--charcoal);">Duplicate & Edit</div>
+            <div style="font-size: 11px; color: var(--charcoal-muted);">Clone any trip instantly</div>
+          </div>
+        </div>
+        <div class="saved-feature-chip">
+          <span style="font-size: 16px;">📊</span>
+          <div>
+            <div style="font-size: 12px; font-weight: 700; color: var(--charcoal);">CSV Export</div>
+            <div style="font-size: 11px; color: var(--charcoal-muted);">Budget breakdown as CSV</div>
+          </div>
+        </div>
+        <div class="saved-feature-chip">
+          <span style="font-size: 16px;">🔑</span>
+          <div>
+            <div style="font-size: 12px; font-weight: 700; color: var(--charcoal);">Secure Tokens</div>
+            <div style="font-size: 11px; color: var(--charcoal-muted);">SHA-256 edit token protection</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats bar (populated by JS) -->
+      <div id="saved-stats-bar" style="display:none; background: var(--ivory-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 24px; display: flex; gap: 32px; flex-wrap: wrap; align-items: center;">
+        <div>
+          <div style="font-size: 22px; font-weight: 800; color: var(--earth-red); font-family: var(--font-serif);" id="stat-trips-count">—</div>
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--charcoal-muted); font-weight: 600;">Saved Trips</div>
+        </div>
+        <div style="width:1px;background:var(--border-color);height:32px;"></div>
+        <div>
+          <div style="font-size: 22px; font-weight: 800; color: var(--forest); font-family: var(--font-serif);" id="stat-cities-count">—</div>
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--charcoal-muted); font-weight: 600;">Unique Start Cities</div>
+        </div>
+        <div style="width:1px;background:var(--border-color);height:32px;"></div>
+        <div>
+          <div style="font-size: 22px; font-weight: 800; color: var(--gold); font-family: var(--font-serif);" id="stat-avg-cost">—</div>
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--charcoal-muted); font-weight: 600;">Avg Budget</div>
+        </div>
+        <div style="margin-left: auto;">
+          <button class="btn-secondary" onclick="App.switchView('journey')" style="padding: 9px 18px; font-size: 13px;">
+            + Plan New Journey
+          </button>
+        </div>
+      </div>
+
+      <!-- Trips List -->
+      <div id="saved-trips-list" style="max-width: 780px;"></div>
+
+      <!-- Quick Tips (always visible) -->
+      <div style="margin-top: 36px; background: linear-gradient(135deg, #faf6f0 0%, #f5ede0 100%); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 24px 28px;">
+        <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--earth-red); margin-bottom: 16px;" data-i18n="saved.tips_title">💡 Pro Tips for Your Karnataka Journey</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+          <div class="saved-tip-card">
+            <div class="saved-tip-icon">🏰</div>
+            <div class="saved-tip-text">
+              <strong>Book Hampi stays early</strong> — accommodation near Virupaksha fills up 2–3 weeks ahead during Oct–Mar peak season.
+            </div>
+          </div>
+          <div class="saved-tip-card">
+            <div class="saved-tip-icon">🚌</div>
+            <div class="saved-tip-text">
+              <strong>KSRTC Airavat</strong> sleeper buses from Bengaluru to Hampi, Goa, and Mysuru are cheap, punctual, and AC.
+            </div>
+          </div>
+          <div class="saved-tip-card">
+            <div class="saved-tip-icon">💰</div>
+            <div class="saved-tip-text">
+              <strong>Entry fees are exact</strong> — every figure in this planner is sourced from the Karnataka State Gazette or ASI.
+            </div>
+          </div>
+          <div class="saved-tip-card">
+            <div class="saved-tip-icon">📱</div>
+            <div class="saved-tip-text">
+              <strong>Use CSV Export</strong> — share your itemized budget with travel companions by exporting from any saved trip.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="color: var(--charcoal); font-family: var(--font-serif);" data-i18n="footer.brand">Namma Payana</strong>
+        &bull; <span data-i18n="footer.hackathon">Kannada Digital Innovation Hackathon 2026</span> <br>
+        <span style="font-size: 12px;" data-i18n="footer.quote">"Beyond Destinations. Into Karnataka." </span>
+      </div>
+      <div style="font-size: 12px; color: var(--charcoal-muted); text-align: right;">
+         &bull; <span data-i18n="footer.gazette">Verified Karnataka State Gazette Sources</span><br>
+         &bull; Transit &amp; food data: <a href="https://www.openstreetmap.org/copyright" rel="noopener noreferrer" target="_blank" style="color: inherit;">© OpenStreetMap contributors, ODbL 1.0</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Destination Detail Modal (Atlas-style big popup) -->
+  <div id="destination-detail-modal" class="dest-modal-backdrop" onclick="App.closeDestinationModal(event)">
+    <div class="dest-modal-dialog" onclick="event.stopPropagation()">
+      <button type="button" class="dest-modal-close" onclick="App.closeDestinationModal()" title="Close details">✕</button>
+      <div id="dest-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Supabase & App Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0/dist/umd/supabase.js" integrity="sha256-ZP9x/icHKRFRrRAr9LgZFoPqh1aK83bSUkneo546cmA=" crossorigin="anonymous"></script>
+  <script src="/static/js/i18n.js?v=20261026_02"></script>
+  <script src="/static/js/map.js?v=20261026_02"></script>
+  <script src="/static/js/phrases.js?v=20261026_02"></script>
+  <!-- Runtime config: server-injected, no secrets committed to JS -->
+  <script nonce="{{g.csp_nonce}}">
+    window.NP_CONFIG = {
+      supabaseUrl: {{config.SUPABASE_URL | tojson}},
+      supabaseAnonKey: {{config.SUPABASE_ANON_KEY | tojson}}
+    };
+  </script>
+  <script src="/static/js/auth.js?v=20261026_02"></script>
+  <script src="/static/js/app.js?v=20261026_02"></script>
+</body>
+</html>

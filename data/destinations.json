@@ -1,0 +1,3324 @@
+[
+  {
+    "id": "mysuru_palace",
+    "name_en": "Mysuru Palace (Amba Vilas)",
+    "name_kn": "ಮೈಸೂರು ಅರಮನೆ (ಅಂಬಾ ವಿಲಾಸ)",
+    "lat": 12.3051,
+    "lng": 76.6551,
+    "district": "Mysuru",
+    "region": "South Karnataka",
+    "categories": [
+      "heritage",
+      "architecture",
+      "culture"
+    ],
+    "description": "Historical seat of the Wadiyar dynasty, renowned for Indo-Saracenic grandeur, exquisite durbar halls, and evening illumination.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 100,
+      "basis": "sourced",
+      "source_url": "https://mysorepalace.karnataka.gov.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Wheelchairs available on site; ramp access provided to ground floor halls.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Mysuru Palace (Amba Vilas).jpg",
+      "url": "/static/images/Mysuru%20Palace%20%28Amba%20Vilas%29.jpg",
+      "credit": "Wikimedia Commons / Muhammad Mahdi Karim",
+      "license": "GNU Free Documentation License",
+      "source_url": "/static/images/Mysuru%20Palace%20%28Amba%20Vilas%29.jpg"
+    },
+    "sources": [
+      "https://mysorepalace.karnataka.gov.in",
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": "10:00-17:30",
+    "closed_days": null,
+    "crowd_level": "high",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "hampi_virupaksha",
+    "name_en": "Hampi (Virupaksha Temple & Bazaar)",
+    "name_kn": "ಹಂಪಿ (ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯ)",
+    "lat": 15.3358,
+    "lng": 76.46,
+    "district": "Vijayanagara",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture",
+      "spirituality"
+    ],
+    "description": "UNESCO World Heritage site and capital of the Vijayanagara Empire, situated among boulder-strewn hills along the Tungabhadra River.",
+    "visit_hours": 4.5,
+    "entry_fee_inr": {
+      "value": 40,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Uneven stone pathways; moderate climbing required for surrounding monuments.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Hampi (Virupaksha Temple & Bazaar).jpg",
+      "url": "/static/images/Hampi%20%28Virupaksha%20Temple%20%26%20Bazaar%29.jpg",
+      "credit": "Wikimedia Commons / Dey.sandip",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Hampi%20%28Virupaksha%20Temple%20%26%20Bazaar%29.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in",
+      "https://whc.unesco.org/en/list/241"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "safety_info": {
+      "emergency_number": "112",
+      "nearest_hospital": "District Hospital, Hospet (~13 km)",
+      "ghat_road_advisory": "Avoid night driving on ghat sections",
+      "basis": "estimated"
+    },
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "high",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "badami_caves",
+    "name_en": "Badami Cave Temples",
+    "name_kn": "ಬಾದಾಮಿ ಗುಹಾ ದೇವಾಲಯಗಳು",
+    "lat": 15.9185,
+    "lng": 75.6766,
+    "district": "Bagalkote",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Sixth-century rock-cut cave temples of the Chalukya dynasty overlooking the tranquil Agastya Lake.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Rock-cut stairs to upper caves; difficult for visitors with restricted mobility.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Badami Cave Temples.jpg",
+      "url": "/static/images/Badami%20Cave%20Temples.jpg",
+      "credit": "Wikimedia Commons / G41rn8",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Badami%20Cave%20Temples.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "no",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "pattadakal",
+    "name_en": "Pattadakal Monument Complex",
+    "name_kn": "ಪಟ್ಟದಕಲ್ಲು ಸ್ಮಾರಕ ಸಂಕೀರ್ಣ",
+    "lat": 15.9489,
+    "lng": 75.816,
+    "district": "Bagalkote",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "UNESCO World Heritage site representing the harmonious synthesis of northern Rekha-Nagara and southern Dravida architectural styles.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 40,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Flat lawn complex with paved walkways between temples.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Pattadakal Monument Complex.jpg",
+      "url": "/static/images/Pattadakal%20Monument%20Complex.jpg",
+      "credit": "Wikimedia Commons / Mukul Banerjee",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Pattadakal%20Monument%20Complex.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in",
+      "https://whc.unesco.org/en/list/239"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "aihole",
+    "name_en": "Aihole Durga Temple Complex",
+    "name_kn": "ಐಹೊಳೆ ದುರ್ಗಾ ದೇವಾಲಯ ಸಂಕೀರ್ಣ",
+    "lat": 16.0218,
+    "lng": 75.8824,
+    "district": "Bagalkote",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Celebrated as the cradle of Hindu rock temple architecture, featuring an unusual apsidal sanctum.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Ground-level garden with stone plinths.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Aihole Durga Temple Complex.jpg",
+      "url": "/static/images/Aihole%20Durga%20Temple%20Complex.jpg",
+      "credit": "Wikimedia Commons / Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0",
+      "source_url": "/static/images/Aihole%20Durga%20Temple%20Complex.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "coorg_madikeri",
+    "name_en": "Madikeri Fort & Raja's Seat",
+    "name_kn": "ಮಡಿಕೇರಿ ಕೋಟೆ ಮತ್ತು ರಾಜಾಸೀಟ್",
+    "lat": 12.4244,
+    "lng": 75.7382,
+    "district": "Kodagu",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "heritage",
+      "viewpoint"
+    ],
+    "description": "Heart of the Kodagu coffee country with rolling hill views, mist, and the historical 17th-century palace fort.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 20,
+      "basis": "sourced",
+      "source_url": "https://kodagu.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Raja's seat garden is paved; fort ramparts have stepped inclines.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Sep-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Madikeri Fort & Raja's Seat.jpg",
+      "url": "/static/images/Madikeri%20Fort%20%26%20Raja%27s%20Seat.jpg",
+      "credit": "Wikimedia Commons / Philip Larson",
+      "license": "CC BY-SA 2.0",
+      "source_url": "/static/images/Madikeri%20Fort%20%26%20Raja%27s%20Seat.jpg"
+    },
+    "sources": [
+      "https://kodagu.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "high",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "chikkamagaluru_mullayanagiri",
+    "name_en": "Mullayanagiri Peak",
+    "name_kn": "ಮುಳ್ಳಯ್ಯನಗಿರಿ ಶಿಖರ",
+    "lat": 13.3912,
+    "lng": 75.7214,
+    "district": "Chikkamagaluru",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "adventure",
+      "viewpoint"
+    ],
+    "description": "Highest peak in Karnataka (1,930 m) offering sweeping vistas of the Western Ghats and trek paths.",
+    "visit_hours": 3.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://chikkamagaluru.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Requires climbing approx 450 stone steps from vehicle stop to summit.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Sep-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Mullayanagiri Peak.jpg",
+      "url": "/static/images/Mullayanagiri%20Peak.jpg",
+      "credit": "Wikimedia Commons / Riju K",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Mullayanagiri%20Peak.jpg"
+    },
+    "sources": [
+      "https://chikkamagaluru.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "no",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "gokarna_beach",
+    "name_en": "Gokarna (Om Beach & Mahabaleshwar)",
+    "name_kn": "ಗೋಕರ್ಣ (ಓಂ ಬೀಚ್ ಮತ್ತು ಮಹಾಬಲೇಶ್ವರ)",
+    "lat": 14.5426,
+    "lng": 74.3188,
+    "district": "Uttara Kannada",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "coastal",
+      "spirituality",
+      "nature"
+    ],
+    "description": "Coastal pilgrimage hub featuring ancient Atma Linga shrine and natural Om-shaped cliff beaches.",
+    "visit_hours": 4.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://uttarakannada.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Temple town has narrow lanes; cliff paths between beaches require walking.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Gokarna (Om Beach & Mahabaleshwar).jpg",
+      "url": "/static/images/Gokarna%20%28Om%20Beach%20%26%20Mahabaleshwar%29.jpg",
+      "credit": "Wikimedia Commons / Neetinrk",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Gokarna%20%28Om%20Beach%20%26%20Mahabaleshwar%29.jpg"
+    },
+    "sources": [
+      "https://uttarakannada.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "safety_info": {
+      "emergency_number": "112",
+      "nearest_hospital": "District Hospital, Karwar (~60 km)",
+      "ghat_road_advisory": "Avoid night driving on ghat sections",
+      "basis": "estimated"
+    },
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "udupi_krishna_matha",
+    "name_en": "Udupi Sri Krishna Matha & Malpe",
+    "name_kn": "ಉಡುಪಿ ಶ್ರೀ ಕೃಷ್ಣ ಮಠ ಮತ್ತು ಮಲ್ಪೆ",
+    "lat": 13.3409,
+    "lng": 74.7525,
+    "district": "Udupi",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "spirituality",
+      "culture",
+      "food",
+      "coastal"
+    ],
+    "description": "13th-century Vaishnavite monastery founded by Saint Madhvacharya, famed for Kanakana Kindi and coastal Udupi cuisine.",
+    "visit_hours": 3.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://udupikrishnamatha.org",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Main temple entrance has accessible ramps; dining halls have ground seating.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Udupi Sri Krishna Matha & Malpe.jpg",
+      "url": "/static/images/Udupi%20Sri%20Krishna%20Matha%20%26%20Malpe.jpg",
+      "credit": "Wikimedia Commons / Premnath Kudva",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Udupi%20Sri%20Krishna%20Matha%20%26%20Malpe.jpg"
+    },
+    "sources": [
+      "https://udupikrishnamatha.org",
+      "https://udupi.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "yes",
+    "opening_hours": "5:00-21:00",
+    "closed_days": null,
+    "crowd_level": "high",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "murudeshwar_temple",
+    "name_en": "Murudeshwar Shiva Statue & Beach",
+    "name_kn": "ಮುರುಡೇಶ್ವರ ಶಿವನ ಪ್ರತಿಮೆ ಮತ್ತು ಕಡಲತೀರ",
+    "lat": 14.0941,
+    "lng": 74.4899,
+    "district": "Uttara Kannada",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "spirituality",
+      "coastal",
+      "architecture"
+    ],
+    "description": "Colossal 123-foot Lord Shiva statue and 20-story Raja Gopura surrounded on three sides by the Arabian Sea.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 10,
+      "basis": "sourced",
+      "source_url": "https://uttarakannada.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Lift facility available inside the Raja Gopura to view the coastline.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Murudeshwar Shiva Statue & Beach.jpg",
+      "url": "/static/images/Murudeshwar%20Shiva%20Statue%20%26%20Beach.jpg",
+      "credit": "Wikimedia Commons / Manjunath Doddamani",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Murudeshwar%20Shiva%20Statue%20%26%20Beach.jpg"
+    },
+    "sources": [
+      "https://uttarakannada.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "jog_falls",
+    "name_en": "Jog Falls (Gerosoppa)",
+    "name_kn": "ಜೋಗ ಜಲಪಾತ",
+    "lat": 14.2285,
+    "lng": 74.8122,
+    "district": "Shivamogga",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "viewpoint"
+    ],
+    "description": "Majestic segmented plunge waterfalls formed by the Sharavathi River, dropping 253 meters in four cascades: Raja, Roarer, Rocket, and Rani.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 50,
+      "basis": "sourced",
+      "source_url": "https://shivamogga.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Main viewing gallery is paved and wheelchair friendly.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Jul-Nov",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Jog Falls (Gerosoppa).jpg",
+      "url": "/static/images/Jog%20Falls%20%28Gerosoppa%29.jpg",
+      "credit": "Wikimedia Commons / Arkadeepeta",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Jog%20Falls%20%28Gerosoppa%29.jpg"
+    },
+    "sources": [
+      "https://shivamogga.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "safety_info": {
+      "emergency_number": "112",
+      "nearest_hospital": "District Hospital, Sagar (~30 km)",
+      "ghat_road_advisory": "Avoid night driving on ghat sections",
+      "basis": "estimated"
+    },
+    "wheelchair_accessible": "no",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "high",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "belur_chennakeshava",
+    "name_en": "Belur Chennakeshava Temple",
+    "name_kn": "ಬೇಲೂರು ಚನ್ನಕೇಶವ ದೇವಾಲಯ",
+    "lat": 13.1627,
+    "lng": 75.8596,
+    "district": "Hassan",
+    "region": "South Karnataka",
+    "categories": [
+      "heritage",
+      "architecture",
+      "culture"
+    ],
+    "description": "UNESCO World Heritage site representing the pinnacle of Hoysala stone sculpture, commissioned by King Vishnuvardhana in 1117 CE.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Raised star-shaped soapstone plinth requires climbing ~8 stone steps.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Belur Chennakeshava Temple.jpg",
+      "url": "/static/images/Belur%20Chennakeshava%20Temple.jpg",
+      "credit": "Wikimedia Commons / Bikashrd",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Belur%20Chennakeshava%20Temple.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in",
+      "https://whc.unesco.org/en/list/1670"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": "7:00-19:00",
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "halebidu_hoysaleswara",
+    "name_en": "Halebidu Hoysaleswara Temple",
+    "name_kn": "ಹಳೇಬೀಡು ಹೊಯ್ಸಳೇಶ್ವರ ದೇವಾಲಯ",
+    "lat": 13.2144,
+    "lng": 75.9942,
+    "district": "Hassan",
+    "region": "South Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Twin-sanctum Hoysala masterpiece covered in intricate stone friezes illustrating epics, mythology, and 12th-century life.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Grounds and garden pathways are level; steps onto the outer platform.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Halebidu Hoysaleswara Temple.jpg",
+      "url": "/static/images/Halebidu%20Hoysaleswara%20Temple.jpg",
+      "credit": "Wikimedia Commons / Philip Larson",
+      "license": "CC BY-SA 2.0",
+      "source_url": "/static/images/Halebidu%20Hoysaleswara%20Temple.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in",
+      "https://whc.unesco.org/en/list/1670"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "yes",
+    "opening_hours": "6:00-18:00",
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "shravanabelagola",
+    "name_en": "Shravanabelagola (Gommateshwara)",
+    "name_kn": "ಶ್ರವಣಬೆಳಗೊಳ (ಗೊಮ್ಮಟೇಶ್ವರ)",
+    "lat": 12.8576,
+    "lng": 76.4864,
+    "district": "Hassan",
+    "region": "South Karnataka",
+    "categories": [
+      "heritage",
+      "spirituality",
+      "architecture"
+    ],
+    "description": "57-foot monolithic statue of Lord Bahubali carved in 981 CE atop Vindhyagiri hill, a venerated Jain pilgrimage destination.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://hassan.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Climb of 650 rock-cut steps; palanquin (doli) service available for elders.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Shravanabelagola (Gommateshwara).jpg",
+      "url": "/static/images/Shravanabelagola%20%28Gommateshwara%29.jpg",
+      "credit": "Wikimedia Commons / Nvvchar",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Shravanabelagola%20%28Gommateshwara%29.jpg"
+    },
+    "sources": [
+      "https://hassan.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "no",
+    "opening_hours": "6:30-17:30",
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "bengaluru_lalbagh",
+    "name_en": "Bengaluru (Lalbagh Botanical Garden & Vidhana Soudha)",
+    "name_kn": "ಬೆಂಗಳೂರು (ಲಾಲ್‌ಬಾಗ್ ಮತ್ತು ವಿಧಾನ ಸೌಧ)",
+    "lat": 12.9507,
+    "lng": 77.5848,
+    "district": "Bengaluru Urban",
+    "region": "South Karnataka",
+    "categories": [
+      "heritage",
+      "nature",
+      "culture"
+    ],
+    "description": "Historic 240-acre botanical garden founded by Hyder Ali featuring the iconic Glass House and rare century-old trees.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 30,
+      "basis": "sourced",
+      "source_url": "https://horticulture.karnataka.gov.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Paved flat paths, electric buggies available for seniors and persons with disabilities.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Year-round",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Bengaluru (Lalbagh Botanical Garden & Vidhana Soudha).jpg",
+      "url": "/static/images/Bengaluru%20%28Lalbagh%20Botanical%20Garden%20%26%20Vidhana%20Soudha%29.jpg",
+      "credit": "Wikimedia Commons / Muhammad Mahdi Karim",
+      "license": "GNU FDL",
+      "source_url": "/static/images/Bengaluru%20%28Lalbagh%20Botanical%20Garden%20%26%20Vidhana%20Soudha%29.jpg"
+    },
+    "sources": [
+      "https://horticulture.karnataka.gov.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "yes",
+    "opening_hours": "6:00-19:00",
+    "closed_days": null,
+    "crowd_level": "high",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "sringeri_sharada_peetham",
+    "name_en": "Sringeri Sharada Peetham & Vidyashankara",
+    "name_kn": "ಶೃಂಗೇರಿ ಶಾರದಾ ಪೀಠ ಮತ್ತು ವಿದ್ಯಾಶಂಕರ",
+    "lat": 13.4194,
+    "lng": 75.257,
+    "district": "Chikkamagaluru",
+    "region": "Malnad",
+    "categories": [
+      "spirituality",
+      "heritage",
+      "architecture"
+    ],
+    "description": "First of four cardinal monasteries established by Adi Shankaracharya on the banks of Tunga River, renowned for the zodiac stone pillars of Vidyashankara temple.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://sringeri.net",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Riverside complex has paved concourses and gentle ramps into temple courtyards.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://sringeri.net",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Sringeri Sharada Peetham & Vidyashankara.jpg",
+      "url": "/static/images/Sringeri%20Sharada%20Peetham%20%26%20Vidyashankara.jpg",
+      "credit": "Wikimedia Commons / Subhashish Panigrahi",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Sringeri%20Sharada%20Peetham%20%26%20Vidyashankara.jpg"
+    },
+    "sources": [
+      "https://sringeri.net"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "dandeli_wildlife",
+    "name_en": "Dandeli Wildlife & Kali River",
+    "name_kn": "ದಾಂಡೇಲಿ ವನ್ಯಜೀವಿ ಮತ್ತು ಕಾಳಿ ನದಿ",
+    "lat": 15.2415,
+    "lng": 74.623,
+    "district": "Uttara Kannada",
+    "region": "Malnad",
+    "categories": [
+      "adventure",
+      "nature",
+      "wildlife"
+    ],
+    "description": "Dense Western Ghats reserve offering whitewater rafting on the Kali River, hornbill birding, and jungle safari.",
+    "visit_hours": 4.5,
+    "entry_fee_inr": {
+      "value": 200,
+      "basis": "estimated",
+      "source_url": "https://aranya.gov.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "River rafting and forest trails require good physical mobility.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-May",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Dandeli Wildlife & Kali River.jpg",
+      "url": "/static/images/Dandeli%20Wildlife%20%26%20Kali%20River.jpg",
+      "credit": "Wikimedia Commons / Sharath.chandra",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Dandeli%20Wildlife%20%26%20Kali%20River.jpg"
+    },
+    "sources": [
+      "https://aranya.gov.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.0",
+    "safety_info": {
+      "emergency_number": "112",
+      "nearest_hospital": "District Hospital, Dandeli (~15 km)",
+      "ghat_road_advisory": "Avoid night driving on ghat sections",
+      "basis": "estimated"
+    },
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "mangaluru_panambur",
+    "name_en": "Mangaluru (Panambur Beach & Kudroli Temple)",
+    "name_kn": "ಮಂಗಳೂರು (ಪಣಂಬೂರು ಕಡಲತೀರ ಮತ್ತು ಕುದ್ರೋಳಿ)",
+    "lat": 12.9328,
+    "lng": 74.808,
+    "district": "Dakshina Kannada",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "coastal",
+      "culture",
+      "food"
+    ],
+    "description": "Coastal port city celebrated for pristine beaches, Gokanatheshwara temple, and unique Tulu Nadu gastronomy (Ghee Roast, Neer Dosa).",
+    "visit_hours": 3.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://dk.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Panambur promenade has level pedestrian access.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Mangaluru (Panambur Beach & Kudroli Temple).jpg",
+      "url": "/static/images/Mangaluru%20%28Panambur%20Beach%20%26%20Kudroli%20Temple%29.jpg",
+      "credit": "Wikimedia Commons / Premkudva",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Mangaluru%20%28Panambur%20Beach%20%26%20Kudroli%20Temple%29.jpg"
+    },
+    "sources": [
+      "https://dk.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "yes",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "vijayapura_gol_gumbaz",
+    "name_en": "Vijayapura (Gol Gumbaz & Ibrahim Rouza)",
+    "name_kn": "ವಿಜಯಪುರ (ಗೋಲ್ ಗುಂಬಜ್ ಮತ್ತು ಇಬ್ರಾಹಿಂ ರೋಜಾ)",
+    "lat": 16.8306,
+    "lng": 75.736,
+    "district": "Vijayapura",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Mausoleum of Mohammed Adil Shah boasting one of the world's largest unsupported acoustic domes and whispering gallery.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Ground floor is accessible; whispering gallery requires climbing narrow spiral staircases.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Vijayapura (Gol Gumbaz & Ibrahim Rouza).jpg",
+      "url": "/static/images/Vijayapura%20%28Gol%20Gumbaz%20%26%20Ibrahim%20Rouza%29.jpg",
+      "credit": "Wikimedia Commons / Mukul Banerjee",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Vijayapura%20%28Gol%20Gumbaz%20%26%20Ibrahim%20Rouza%29.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": "6:00-18:00",
+    "closed_days": [
+      "Friday"
+    ],
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "kabini_safari",
+    "name_en": "Kabini River (Nagarhole Tiger Reserve)",
+    "name_kn": "ಕಬಿನಿ ನದಿ (ನಾಗರಹೊಳೆ ಹುಲಿ ಸಂರಕ್ಷಿತ ಪ್ರದೇಶ)",
+    "lat": 11.9167,
+    "lng": 76.25,
+    "district": "Mysuru",
+    "region": "South Karnataka",
+    "categories": [
+      "wildlife",
+      "nature"
+    ],
+    "description": "Premier wildlife sanctuary famous for dense leopard and tiger sightings, elephant herds, and boat safaris along the backwaters.",
+    "visit_hours": 4.0,
+    "entry_fee_inr": {
+      "value": 450,
+      "basis": "sourced",
+      "source_url": "https://nagarholetigerreserve.com",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Safari vehicles require stepping up onto open jeep/canter frames.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-May",
+      "source_url": "https://nagarholetigerreserve.com",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Kabini River (Nagarhole Tiger Reserve).jpg",
+      "url": "/static/images/Kabini%20River%20%28Nagarhole%20Tiger%20Reserve%29.jpg",
+      "credit": "Wikimedia Commons / Yathin S Krishnappa",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Kabini%20River%20%28Nagarhole%20Tiger%20Reserve%29.jpg"
+    },
+    "sources": [
+      "https://nagarholetigerreserve.com"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "chitradurga_fort",
+    "name_en": "Chitradurga Fort (Elusuttina Kote)",
+    "name_kn": "ಚಿತ್ರದುರ್ಗ ಕೋಟೆ (ಏಳುಸುತ್ತಿನ ಕೋಟೆ)",
+    "lat": 14.2217,
+    "lng": 76.3986,
+    "district": "Chitradurga",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "architecture",
+      "adventure"
+    ],
+    "description": "Formidable stone fortress with seven concentric defensive walls, 19 gateways, 38 postern gates, and ancient rainwater harvesting tanks.",
+    "visit_hours": 3.5,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Extensive uphill walking on uneven rock slopes.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Chitradurga Fort (Elusuttina Kote).jpg",
+      "url": "/static/images/Chitradurga%20Fort%20%28Elusuttina%20Kote%29.jpg",
+      "credit": "Wikimedia Commons / Pavithrah",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Chitradurga%20Fort%20%28Elusuttina%20Kote%29.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "no",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "shivanasamudra_falls",
+    "name_en": "Shivanasamudra Falls (Gaganachukki & Barachukki)",
+    "name_kn": "ಶಿವನಸಮುದ್ರ ಜಲಪಾತ (ಗಗನಚುಕ್ಕಿ ಮತ್ತು ಭರಚುಕ್ಕಿ)",
+    "lat": 12.2965,
+    "lng": 77.1685,
+    "district": "Mandya",
+    "region": "South Karnataka",
+    "categories": [
+      "nature",
+      "viewpoint"
+    ],
+    "description": "Twin cascading waterfalls on the Kaveri River, location of India's first major hydroelectric station (built 1902).",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://mandya.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Viewpoints feature fenced stone walkways; Barachukki has stairs down toward the basin.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Jul-Jan",
+      "source_url": "https://mandya.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Shivanasamudra Falls (Gaganachukki & Barachukki).jpg",
+      "url": "/static/images/Shivanasamudra%20Falls%20%28Gaganachukki%20%26%20Barachukki%29.jpg",
+      "credit": "Wikimedia Commons / Quantumquark",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Shivanasamudra%20Falls%20%28Gaganachukki%20%26%20Barachukki%29.jpg"
+    },
+    "sources": [
+      "https://mandya.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "partial",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "somnathpura_temple",
+    "name_en": "Somnathpura Prasanna Chennakesava Temple",
+    "name_kn": "ಸೋಮನಾಥಪುರ ಪ್ರಸನ್ನ ಚನ್ನಕೇಶವ ದೇವಾಲಯ",
+    "lat": 12.2762,
+    "lng": 76.8817,
+    "district": "Mysuru",
+    "region": "South Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "UNESCO World Heritage site (2023) trikuta (triple-shrine) temple built in 1268 CE, fully enclosed by a pillared cloister.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Well-kept level lawn surrounding the temple platform.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Somnathpura Prasanna Chennakesava Temple.jpg",
+      "url": "/static/images/Somnathpura%20Prasanna%20Chennakesava%20Temple.jpg",
+      "credit": "Wikimedia Commons / Dineshkannambadi",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Somnathpura%20Prasanna%20Chennakesava%20Temple.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in",
+      "https://whc.unesco.org/en/list/1670"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "wheelchair_accessible": "yes",
+    "opening_hours": "9:00-18:00",
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "kudremukh_peak",
+    "name_en": "Kudremukh National Park & Peak",
+    "name_kn": "ಕುದುರೆಮುಖ ರಾಷ್ಟ್ರೀಯ ಉದ್ಯಾನ",
+    "lat": 13.2198,
+    "lng": 75.253,
+    "district": "Chikkamagaluru",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "adventure",
+      "wildlife"
+    ],
+    "description": "Distinctive horse-face shaped mountain peak surrounded by rolling shola grasslands and evergreen rainforests.",
+    "visit_hours": 5.0,
+    "entry_fee_inr": {
+      "value": 475,
+      "basis": "sourced",
+      "source_url": "https://kudremukhanationalpark.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Steep 9 km mountain trek requiring forest department permission; strictly for fit trekkers.",
+      "verified": true
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://kudremukhanationalpark.in",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Kudremukh National Park & Peak.jpg",
+      "url": "/static/images/Kudremukh%20National%20Park%20%26%20Peak.jpg",
+      "credit": "Wikimedia Commons / Karunakar Rayker",
+      "license": "CC BY 2.0",
+      "source_url": "/static/images/Kudremukh%20National%20Park%20%26%20Peak.jpg"
+    },
+    "sources": [
+      "https://kudremukhanationalpark.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.0",
+    "safety_info": {
+      "emergency_number": "112",
+      "nearest_hospital": "District Hospital, Chikkamagaluru (~50 km)",
+      "ghat_road_advisory": "Avoid night driving on ghat sections",
+      "basis": "estimated"
+    },
+    "wheelchair_accessible": "no",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "bidar_fort",
+    "name_en": "Bidar Fort",
+    "name_kn": "ಬೀದರ್ ಕೋಟೆ",
+    "lat": 17.9142,
+    "lng": 77.5284,
+    "district": "Bidar",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Massive 15th-century Bahmani Sultanate fort spanning over 5 km of perimeter walls, enclosing the ancient capital city with its distinctive Persian-style gateways and water supply system.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Uneven fort terrain; some areas require climbing.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Bidar Fort.jpg",
+      "url": "/static/images/Bidar%20Fort.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Bidar%20Fort.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "gulbarga_sharana_basaveshwara",
+    "name_en": "Kalaburagi Sharana Basaveshwara Dargah",
+    "name_kn": "ಕಲಬುರಗಿ ಶರಣ ಬಸವೇಶ್ವರ ದರ್ಗಾ",
+    "lat": 17.3291,
+    "lng": 76.8194,
+    "district": "Kalaburagi",
+    "region": "North Karnataka",
+    "categories": [
+      "spirituality",
+      "heritage"
+    ],
+    "description": "13th-century Sufi saint's dargah considered sacred by both Hindus and Muslims, drawing devotees in a unique tradition of communal harmony.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://kalaburagi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Mosque and dargah complex has paved walkways.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Kalaburagi Sharana Basaveshwara Dargah.jpg",
+      "url": "/static/images/Kalaburagi%20Sharana%20Basaveshwara%20Dargah.jpg",
+      "credit": "Wikimedia Commons / Gettyedu",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Kalaburagi%20Sharana%20Basaveshwara%20Dargah.jpg"
+    },
+    "sources": [
+      "https://kalaburagi.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "bijapur_ibrahim_rauza",
+    "name_en": "Bijapur Ibrahim Rauza",
+    "name_kn": "ಬಿಜಾಪುರ ಇಬ್ರಾಹಿಂ ರೋಜಾ",
+    "lat": 16.8261,
+    "lng": 75.7193,
+    "district": "Vijayapura",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Graceful 17th-century mausoleum of Ibrahim Adil Shah II, noted for its delicate stone lacework and considered an architectural precursor of the Taj Mahal.",
+    "visit_hours": 1.5,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Well-maintained garden grounds; platform steps at mausoleum entrance.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Bijapur Ibrahim Rauza.jpg",
+      "url": "/static/images/Bijapur%20Ibrahim%20Rauza.jpg",
+      "credit": "Wikimedia Commons / Mukund.deshpande",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Bijapur%20Ibrahim%20Rauza.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "bijapur_jod_gumbaz",
+    "name_en": "Bijapur Jod Gumbaz (Twin Domes)",
+    "name_kn": "ಬಿಜಾಪುರ ಜೋಡ್ ಗುಂಬಜ್",
+    "lat": 16.8289,
+    "lng": 75.7329,
+    "district": "Vijayapura",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "A pair of identical domed mausoleums built in the Adil Shahi architectural tradition, standing as lesser-known gems in Bijapur's monument cluster.",
+    "visit_hours": 1.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Open grounds; no steps to main structures.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Bijapur Jod Gumbaz (Twin Domes).jpg",
+      "url": "/static/images/Bijapur%20Jod%20Gumbaz%20%28Twin%20Domes%29.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Bijapur%20Jod%20Gumbaz%20%28Twin%20Domes%29.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "gulbarga_fort",
+    "name_en": "Kalaburagi Fort & Jama Masjid",
+    "name_kn": "ಕಲಬುರಗಿ ಕೋಟೆ ಮತ್ತು ಜಾಮಾ ಮಸೀದಿ",
+    "lat": 17.3377,
+    "lng": 76.8234,
+    "district": "Kalaburagi",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "14th-century Bahmani fort housing the Jama Masjid, one of the earliest mosques in India built with an arched roof inspired by the Cordoba mosque in Spain.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Flat courtyard approach; some uneven surfaces inside.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Kalaburagi Fort & Jama Masjid.jpg",
+      "url": "/static/images/Kalaburagi%20Fort%20%26%20Jama%20Masjid.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Kalaburagi%20Fort%20%26%20Jama%20Masjid.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "srirangapatna_ranganathaswamy",
+    "name_en": "Srirangapatna Ranganathaswamy Temple & Tipu's Island",
+    "name_kn": "ಶ್ರೀರಂಗಪಟ್ಟಣ ರಂಗನಾಥಸ್ವಾಮಿ ದೇವಾಲಯ",
+    "lat": 12.4198,
+    "lng": 76.6972,
+    "district": "Mandya",
+    "region": "South Karnataka",
+    "categories": [
+      "heritage",
+      "spirituality",
+      "history"
+    ],
+    "description": "River island fortress-town that served as Tipu Sultan's capital, home to the ancient Ranganathaswamy temple, Tipu's summer palace Dariya Daulat, and the fort walls.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Flat island terrain; museum interiors accessible.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Srirangapatna Ranganathaswamy Temple & Tipu's Island.jpg",
+      "url": "/static/images/Srirangapatna%20Ranganathaswamy%20Temple%20%26%20Tipu%27s%20Island.jpg",
+      "credit": "Wikimedia Commons / Dineshkannambadi",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Srirangapatna%20Ranganathaswamy%20Temple%20%26%20Tipu%27s%20Island.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in",
+      "https://mandya.nic.in"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "brindavan_gardens",
+    "name_en": "Brindavan Gardens (KRS Dam)",
+    "name_kn": "ಬೃಂದಾವನ ಉದ್ಯಾನ (ಕೆಆರ್‌ಎಸ್ ಅಣೆಕಟ್ಟು)",
+    "lat": 12.4244,
+    "lng": 76.5723,
+    "district": "Mandya",
+    "region": "South Karnataka",
+    "categories": [
+      "nature",
+      "heritage",
+      "viewpoint"
+    ],
+    "description": "Terraced Mughal-style garden downstream of the Krishnaraja Sagara Dam, famous for musical fountain illumination shows in the evenings.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 30,
+      "basis": "estimated",
+      "source_url": "https://mandya.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Terraced gardens have steps between levels; main lawn paths are paved.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Brindavan Gardens (KRS Dam).jpg",
+      "url": "/static/images/Brindavan%20Gardens%20%28KRS%20Dam%29.jpg",
+      "credit": "Wikimedia Commons / Joydeep",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Brindavan%20Gardens%20%28KRS%20Dam%29.jpg"
+    },
+    "sources": [
+      "https://mandya.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "nanjangud_temple",
+    "name_en": "Nanjangud Srikanteshwara Temple",
+    "name_kn": "ನಂಜನಗೂಡು ಶ್ರೀಕಂಠೇಶ್ವರ ದೇವಾಲಯ",
+    "lat": 12.1144,
+    "lng": 76.6858,
+    "district": "Mysuru",
+    "region": "South Karnataka",
+    "categories": [
+      "spirituality",
+      "heritage"
+    ],
+    "description": "Ancient Shiva temple on the banks of the Kapila River, one of the most visited pilgrimage sites in Karnataka with a 40-metre Dravidian gopura.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://mysuru.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Main shrine corridor has stone floors; accessible approach to outer courtyard.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Nanjangud Srikanteshwara Temple.jpg",
+      "url": "/static/images/Nanjangud%20Srikanteshwara%20Temple.jpg",
+      "credit": "Wikimedia Commons / Dineshkannambadi",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Nanjangud%20Srikanteshwara%20Temple.jpg"
+    },
+    "sources": [
+      "https://mysuru.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "melkote_temple",
+    "name_en": "Melkote Cheluvanarayana Swamy Temple",
+    "name_kn": "ಮೇಲುಕೋಟೆ ಚೆಲುವನಾರಾಯಣ ಸ್ವಾಮಿ ದೇವಾಲಯ",
+    "lat": 12.6579,
+    "lng": 76.6506,
+    "district": "Mandya",
+    "region": "South Karnataka",
+    "categories": [
+      "spirituality",
+      "heritage",
+      "viewpoint"
+    ],
+    "description": "12th-century Vaishnavite temple on a rocky hillock reformulated by the philosopher-saint Ramanuja, famous for its Vairamudi festival when the deity is adorned with a diamond crown.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://mandya.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Rocky hill approach with stone steps; challenging for reduced mobility visitors.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Melkote Cheluvanarayana Swamy Temple.jpg",
+      "url": "/static/images/Melkote%20Cheluvanarayana%20Swamy%20Temple.jpg",
+      "credit": "Wikimedia Commons / BNC",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Melkote%20Cheluvanarayana%20Swamy%20Temple.jpg"
+    },
+    "sources": [
+      "https://mandya.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "talakad",
+    "name_en": "Talakad Sand-buried Temples",
+    "name_kn": "ತಾಳಕಾಡು ಮರಳಿನಲ್ಲಿ ಹೂತ ದೇವಾಲಯಗಳು",
+    "lat": 12.1966,
+    "lng": 77.0384,
+    "district": "Mysuru",
+    "region": "South Karnataka",
+    "categories": [
+      "heritage",
+      "spirituality"
+    ],
+    "description": "Ancient temple town on the Kaveri River where medieval Ganga-dynasty temples lie partially buried under sand dunes, with Vaidyeshwara temple as the main active shrine.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://mysuru.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Sand terrain; some temples excavated and accessible with steps.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Talakad Sand-buried Temples.jpg",
+      "url": "/static/images/Talakad%20Sand-buried%20Temples.jpg",
+      "credit": "Wikimedia Commons / Dineshkannambadi",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Talakad%20Sand-buried%20Temples.jpg"
+    },
+    "sources": [
+      "https://mysuru.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "st_marys_island",
+    "name_en": "St. Mary's Islands, Malpe",
+    "name_kn": "ಸೇಂಟ್ ಮೇರಿ ದ್ವೀಪಗಳು, ಮಲ್ಪೆ",
+    "lat": 13.3733,
+    "lng": 74.6544,
+    "district": "Udupi",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "coastal",
+      "nature",
+      "geology"
+    ],
+    "description": "Geologically protected cluster of four islands off Malpe beach, famous for the distinctive hexagonal basalt columns formed by ancient volcanic activity, accessible only by ferry.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 350,
+      "basis": "estimated",
+      "source_url": "https://udupi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Ferry access required; rocky basalt surfaces on islands.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-May",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "St. Mary's Islands, Malpe.jpg",
+      "url": "/static/images/St.%20Mary%27s%20Islands%2C%20Malpe.jpg",
+      "credit": "Wikimedia Commons / Arun Prabhu",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/St.%20Mary%27s%20Islands%2C%20Malpe.jpg"
+    },
+    "sources": [
+      "https://udupi.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "kudle_beach_gokarna",
+    "name_en": "Kudle Beach, Gokarna",
+    "name_kn": "ಕುಡ್ಲೆ ಕಡಲತೀರ, ಗೋಕರ್ಣ",
+    "lat": 14.5161,
+    "lng": 74.3079,
+    "district": "Uttara Kannada",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "coastal",
+      "nature",
+      "adventure"
+    ],
+    "description": "Secluded crescent-shaped beach south of Gokarna town, accessible by a short cliff trek, offering calm waters and a quieter alternative to Om Beach.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://uttarakannada.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Narrow cliff path access; not suitable for reduced mobility visitors.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Kudle Beach, Gokarna.jpg",
+      "url": "/static/images/Kudle%20Beach%2C%20Gokarna.jpg",
+      "credit": "Wikimedia Commons / Axis Ofuran",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Kudle%20Beach%2C%20Gokarna.jpg"
+    },
+    "sources": [
+      "https://uttarakannada.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "mirjan_fort",
+    "name_en": "Mirjan Fort",
+    "name_kn": "ಮಿರ್ಜಾನ್ ಕೋಟೆ",
+    "lat": 14.2007,
+    "lng": 74.5581,
+    "district": "Uttara Kannada",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "heritage",
+      "nature"
+    ],
+    "description": "16th-century laterite fort built by the Nawabs of Savanur on the Aganashini River estuary, now lush with vegetation and noted for birdwatching in its moat.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 25,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Grass-covered ramparts; mostly flat interior grounds.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Mirjan Fort.jpg",
+      "url": "/static/images/Mirjan%20Fort.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Mirjan%20Fort.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "murdeshwar_beach",
+    "name_en": "Murdeshwar Beach",
+    "name_kn": "ಮುರುಡೇಶ್ವರ ಕಡಲತೀರ",
+    "lat": 14.0912,
+    "lng": 74.4821,
+    "district": "Uttara Kannada",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "coastal",
+      "nature"
+    ],
+    "description": "Wide sandy beach adjacent to the Murdeshwar temple complex on Kanduka Hill, offering views of the Shiva statue from the shoreline and calm waters for wading.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://uttarakannada.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Open beach with level sand access.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Murdeshwar Beach.jpg",
+      "url": "/static/images/Murdeshwar%20Beach.jpg",
+      "credit": "Wikimedia Commons / Manjunatha",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Murdeshwar%20Beach.jpg"
+    },
+    "sources": [
+      "https://uttarakannada.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "agumbe_sunset_point",
+    "name_en": "Agumbe Sunset Point & Rainforest",
+    "name_kn": "ಅಗುಂಬೆ ಸಂಜೆ ದೃಶ್ಯ ತಾಣ",
+    "lat": 13.5001,
+    "lng": 75.0965,
+    "district": "Shivamogga",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "viewpoint",
+      "wildlife"
+    ],
+    "description": "Western Ghats village known as the Cherrapunji of the South, with a celebrated sunset viewpoint overlooking the Someshwara valley and serving as a king cobra research site.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Short walk to sunset viewpoint; forest trails require sturdy footwear.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Sep-Jan",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Agumbe Sunset Point & Rainforest.jpg",
+      "url": "/static/images/Agumbe%20Sunset%20Point%20%26%20Rainforest.jpg",
+      "credit": "Wikimedia Commons / Premnath Thirumalaisamy",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Agumbe%20Sunset%20Point%20%26%20Rainforest.jpg"
+    },
+    "sources": [
+      "https://shivamogga.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "abbey_falls_coorg",
+    "name_en": "Abbey Falls, Coorg",
+    "name_kn": "ಅಬ್ಬೆ ಜಲಪಾತ, ಕೊಡಗು",
+    "lat": 12.4268,
+    "lng": 75.7396,
+    "district": "Kodagu",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "viewpoint"
+    ],
+    "description": "70-foot waterfall surrounded by coffee plantation estates and spice gardens, accessible via a short forest walk from Madikeri.",
+    "visit_hours": 1.5,
+    "entry_fee_inr": {
+      "value": 50,
+      "basis": "estimated",
+      "source_url": "https://kodagu.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Paved viewing platform; steep steps down to closer viewpoint.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Jun-Nov",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Abbey Falls, Coorg.jpg",
+      "url": "/static/images/Abbey%20Falls%2C%20Coorg.jpg",
+      "credit": "Wikimedia Commons / Riju K",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Abbey%20Falls%2C%20Coorg.jpg"
+    },
+    "sources": [
+      "https://kodagu.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "dubare_elephant_camp",
+    "name_en": "Dubare Elephant Camp",
+    "name_kn": "ದುಬಾರೆ ಆನೆ ತರಬೇತಿ ಕೇಂದ್ರ",
+    "lat": 12.3293,
+    "lng": 75.9312,
+    "district": "Kodagu",
+    "region": "Malnad",
+    "categories": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "description": "Forest department elephant camp on an island in the Kaveri River where visitors can observe elephant bathing and feeding; Karnataka Forest Department managed.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 250,
+      "basis": "estimated",
+      "source_url": "https://aranya.gov.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "River crossing by coracle required; riverbank terrain.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Dubare Elephant Camp.jpg",
+      "url": "/static/images/Dubare%20Elephant%20Camp.jpg",
+      "credit": "Wikimedia Commons / Chinmayisk",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Dubare%20Elephant%20Camp.jpg"
+    },
+    "sources": [
+      "https://aranya.gov.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "bhadra_wildlife_sanctuary",
+    "name_en": "Bhadra Wildlife Sanctuary",
+    "name_kn": "ಭದ್ರ ವನ್ಯಜೀವಿ ಅಭಯಾರಣ್ಯ",
+    "lat": 13.5698,
+    "lng": 75.6481,
+    "district": "Chikkamagaluru",
+    "region": "Malnad",
+    "categories": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "description": "Project Tiger reserve in the Bhadra river basin with dense deciduous forest, home to tigers, leopards, gaur, and over 250 species of birds.",
+    "visit_hours": 4.0,
+    "entry_fee_inr": {
+      "value": 300,
+      "basis": "estimated",
+      "source_url": "https://aranya.gov.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Safari jeep access; not suitable for visitors with limited mobility.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-May",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Bhadra Wildlife Sanctuary.jpg",
+      "url": "/static/images/Bhadra%20Wildlife%20Sanctuary.jpg",
+      "credit": "Wikimedia Commons / Dattatri S",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Bhadra%20Wildlife%20Sanctuary.jpg"
+    },
+    "sources": [
+      "https://aranya.gov.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "sakleshpur_railway_trek",
+    "name_en": "Sakleshpur Bisle–Kukke Ghat Railway Trek",
+    "name_kn": "ಸಕಲೇಶಪುರ ಬಿಸಿಲೆ–ಕುಕ್ಕೆ ಘಟ್ಟ ರೈಲ್ವೆ ಟ್ರೆಕ್",
+    "lat": 12.9475,
+    "lng": 75.7838,
+    "district": "Hassan",
+    "region": "Malnad",
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "description": "Scenic heritage railway trail through Western Ghats tunnels and viaducts from Sakleshpur towards Subramanya, passing through dense rainforest and offering panoramic valley views.",
+    "visit_hours": 5.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Requires crossing active railway tracks; sturdy trekking footwear essential.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Sep-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Sakleshpur Bisle-Kukke Ghat Railway Trek.jpg",
+      "url": "/static/images/Sakleshpur%20Bisle-Kukke%20Ghat%20Railway%20Trek.jpg",
+      "credit": "Wikimedia Commons / Shamshaan",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Sakleshpur%20Bisle-Kukke%20Ghat%20Railway%20Trek.jpg"
+    },
+    "sources": [
+      "https://hassan.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "daroji_bear_sanctuary",
+    "name_en": "Daroji Bear Sanctuary",
+    "name_kn": "ದರೋಜಿ ಕರಡಿ ಅಭಯಾರಣ್ಯ",
+    "lat": 15.1247,
+    "lng": 76.4218,
+    "district": "Vijayanagara",
+    "region": "Central Karnataka",
+    "categories": [
+      "wildlife",
+      "nature"
+    ],
+    "description": "India's first dedicated sloth bear sanctuary near Hampi, where over 120 free-ranging sloth bears can be observed from an elevated watch tower in their natural rocky habitat.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 200,
+      "basis": "estimated",
+      "source_url": "https://aranya.gov.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Paved path to watch tower; steps up to observation deck.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Sep-May",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Daroji Bear Sanctuary.jpg",
+      "url": "/static/images/Daroji%20Bear%20Sanctuary.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Daroji%20Bear%20Sanctuary.jpg"
+    },
+    "sources": [
+      "https://aranya.gov.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "tungabhadra_dam",
+    "name_en": "Tungabhadra Dam & Reservoir",
+    "name_kn": "ತುಂಗಭದ್ರ ಅಣೆಕಟ್ಟು",
+    "lat": 15.2736,
+    "lng": 76.3319,
+    "district": "Vijayanagara",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "nature",
+      "viewpoint"
+    ],
+    "description": "Gravity-cum-masonry dam built across the Tungabhadra River in 1953, with a terraced garden, rowing facilities, and panoramic views of the backwaters.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 30,
+      "basis": "estimated",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Flat approach to dam crest viewpoint; garden paths are paved.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Tungabhadra Dam & Reservoir.jpg",
+      "url": "/static/images/Tungabhadra%20Dam%20%26%20Reservoir.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Tungabhadra%20Dam%20%26%20Reservoir.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "anegundi",
+    "name_en": "Anegundi (Kishkinda Heritage Village)",
+    "name_kn": "ಆನೆಗುಂದಿ (ಕಿಷ್ಕಿಂಧ ಪಾರಂಪರಿಕ ಗ್ರಾಮ)",
+    "lat": 15.3618,
+    "lng": 76.4761,
+    "district": "Vijayanagara",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "culture",
+      "nature"
+    ],
+    "description": "Ancient settlement across the Tungabhadra from Hampi, believed to be the mythological Kishkinda of the Ramayana, featuring Anjaneya Hill, Pampa Sarovar, and traditional village life.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Village paths; Anjaneya Hill requires 575 steps.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Anegundi (Kishkinda Heritage Village).jpg",
+      "url": "/static/images/Anegundi%20%28Kishkinda%20Heritage%20Village%29.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Anegundi%20%28Kishkinda%20Heritage%20Village%29.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "savandurga_hill",
+    "name_en": "Savandurga Hill Fort",
+    "name_kn": "ಸಾವನದುರ್ಗ ಬೆಟ್ಟ",
+    "lat": 12.9201,
+    "lng": 77.2924,
+    "district": "Ramanagara",
+    "region": "South Karnataka",
+    "categories": [
+      "adventure",
+      "nature",
+      "heritage"
+    ],
+    "description": "One of Asia's largest monolithic hills at 1,226 m, rising dramatically from the Deccan plain with ancient fort ruins atop and trekking routes of varying difficulty.",
+    "visit_hours": 3.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Steep rock face climb; requires physical fitness; guide recommended.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Savandurga Hill Fort.jpg",
+      "url": "/static/images/Savandurga%20Hill%20Fort.jpg",
+      "credit": "Wikimedia Commons / Shyamal",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Savandurga%20Hill%20Fort.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "bandipur_tiger_reserve",
+    "name_en": "Bandipur Tiger Reserve",
+    "name_kn": "ಬಂಡೀಪುರ ಹುಲಿ ಸಂರಕ್ಷಿತ ಪ್ರದೇಶ",
+    "lat": 11.6554,
+    "lng": 76.6333,
+    "district": "Chamarajanagara",
+    "region": "South Karnataka",
+    "categories": [
+      "wildlife",
+      "nature"
+    ],
+    "description": "One of India's premier Project Tiger reserves at the tri-state junction of Karnataka, Tamil Nadu, and Kerala, with large populations of elephants, tigers, leopards, and wild dogs.",
+    "visit_hours": 4.0,
+    "entry_fee_inr": {
+      "value": 500,
+      "basis": "estimated",
+      "source_url": "https://aranya.gov.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Safari canter and jeep access from gate; not suitable for visitors with limited mobility.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Mar-Jun",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Bandipur Tiger Reserve.jpg",
+      "url": "/static/images/Bandipur%20Tiger%20Reserve.jpg",
+      "credit": "Wikimedia Commons / Yathin S Krishnappa",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Bandipur%20Tiger%20Reserve.jpg"
+    },
+    "sources": [
+      "https://aranya.gov.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "yana_rocks",
+    "name_en": "Yana Rock Formations",
+    "name_kn": "ಯಾಣ ಬಂಡೆಗಳು",
+    "lat": 14.7274,
+    "lng": 74.5534,
+    "district": "Uttara Kannada",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "adventure",
+      "spirituality"
+    ],
+    "description": "Dramatic black crystalline karst rock formations rising 120 m from dense forest, with the two main peaks named Bhairaveshwara Shikhara and Mohini Shikhara, housing ancient shrines.",
+    "visit_hours": 3.5,
+    "entry_fee_inr": {
+      "value": 50,
+      "basis": "estimated",
+      "source_url": "https://uttarakannada.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Forest walk to rocks; steep scramble to upper shrine areas.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-May",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Yana Rock Formations.jpg",
+      "url": "/static/images/Yana%20Rock%20Formations.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Yana%20Rock%20Formations.jpg"
+    },
+    "sources": [
+      "https://uttarakannada.nic.in"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "nandi_hills",
+    "name_en": "Nandi Hills (Nandidurga)",
+    "name_kn": "ನಂದಿ ಬೆಟ್ಟ (ನಂದಿದುರ್ಗ)",
+    "lat": 13.3702,
+    "lng": 77.6835,
+    "district": "Chikkaballapura",
+    "region": "South Karnataka",
+    "categories": [
+      "nature",
+      "heritage",
+      "viewpoint",
+      "adventure"
+    ],
+    "description": "Hill fortress at 1,478 m, once Tipu Sultan's summer retreat, offering spectacular sunrise views and the base for one of Karnataka's most popular cycling climbs.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 20,
+      "basis": "sourced",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Paved road to summit; garden walkways are accessible; some viewpoints involve short steep paths.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Sep-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Nandi Hills (Nandidurga).jpg",
+      "url": "/static/images/Nandi%20Hills%20%28Nandidurga%29.jpg",
+      "credit": "Wikimedia Commons / Vishesh555",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Nandi%20Hills%20%28Nandidurga%29.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "hospet_hampi_ruins",
+    "name_en": "Hampi (Vittala Temple & Stone Chariot)",
+    "name_kn": "ಹಂಪಿ (ವಿಟ್ಟಲ ದೇವಾಲಯ ಮತ್ತು ಶಿಲಾ ರಥ)",
+    "lat": 15.3361,
+    "lng": 76.4622,
+    "district": "Vijayanagara",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Iconic Vittala Temple complex housing the famous stone chariot and musical pillars, the finest example of Vijayanagara architecture within the UNESCO World Heritage Hampi site.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": 40,
+      "basis": "sourced",
+      "source_url": "https://asi.nic.in",
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Footwear must be removed; paved courtyard approach.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Hampi (Vittala Temple & Stone Chariot).jpg",
+      "url": "/static/images/Hampi%20%28Vittala%20Temple%20%26%20Stone%20Chariot%29.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Hampi%20%28Vittala%20Temple%20%26%20Stone%20Chariot%29.jpg"
+    },
+    "sources": [
+      "https://asi.nic.in",
+      "https://whc.unesco.org/en/list/241"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "raichur_fort",
+    "name_en": "Raichur Fort",
+    "name_kn": "ರಾಯಚೂರು ಕೋಟೆ",
+    "lat": 16.212,
+    "lng": 77.3566,
+    "district": "Raichur",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Medieval hilltop fort that changed hands between the Bahmani Sultanate, Vijayanagara Empire, and Adil Shahis, offering panoramic views of the Deccan plains from its 300 m elevation.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-22"
+    },
+    "accessibility_notes": {
+      "value": "Steep climb to fort; rocky terrain.",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Feb",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-22"
+    },
+    "image": {
+      "file": "Raichur Fort.jpg",
+      "url": "/static/images/Raichur%20Fort.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Raichur%20Fort.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "unknown",
+    "last_verified": "2026-10-22"
+  },
+  {
+    "id": "lakkundi_temples",
+    "name_en": "Lakkundi Temple Complex",
+    "name_kn": "ಲಕ್ಕುಂದಿ ದೇವಾಲಯ ಸಮೂಹ",
+    "lat": 15.4167,
+    "lng": 75.9833,
+    "district": "Gadag",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Village famed for its cluster of Chalukya-era temples and stepped wells (kalyanis), with the Kashi Vishveshvara temple showcasing ornate stonework and lathe-turned pillars.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Lakkundi Temple Complex.jpg",
+      "url": "/static/images/Lakkundi%20Temple%20Complex.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Lakkundi%20Temple%20Complex.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "gadag_trikuteshwara",
+    "name_en": "Trikuteshwara Temple, Gadag",
+    "name_kn": "ತ್ರಿಕೂಟೇಶ್ವರ ದೇವಸ್ಥಾನ, ಗದಗ",
+    "lat": 15.4297,
+    "lng": 75.6269,
+    "district": "Gadag",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "architecture",
+      "spirituality"
+    ],
+    "description": "12th-century Chalukya temple dedicated to Shiva with three lingas, noted for its elaborately carved pillars, ornate doorways, and the attached Saraswati shrine with finely detailed figure work.",
+    "visit_hours": 1.5,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Trikuteshwara Temple, Gadag.jpg",
+      "url": "/static/images/Trikuteshwara%20Temple%2C%20Gadag.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Trikuteshwara%20Temple%2C%20Gadag.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "yadgir_fort",
+    "name_en": "Yadgir Fort",
+    "name_kn": "ಯಾದಗಿರಿ ಕೋಟೆ",
+    "lat": 16.7667,
+    "lng": 77.1333,
+    "district": "Yadgir",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Hill fort overlooking Yadgir town and the Krishna river valley, historically a strategic stronghold of the Bahmani and Adil Shahi periods, with gateways and ruined bastions.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Yadgir Fort.jpg",
+      "url": "/static/images/Yadgir%20Fort.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Yadgir%20Fort.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "kuknoor",
+    "name_en": "Kuknoor Step Well & Temples",
+    "name_kn": "ಕುಕ್ಕನೂರು ಬಾವಿ ಮತ್ತು ದೇವಾಲಯಗಳು",
+    "lat": 15.7333,
+    "lng": 76.0167,
+    "district": "Koppal",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "Temple village home to the Mahadeva temple and an ancient step well (kalyani), part of the Kuknoor group of Chalukya monuments near Hampi.",
+    "visit_hours": 1.5,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Kuknoor Step Well & Temples.jpg",
+      "url": "/static/images/Kuknoor%20Step%20Well%20%26%20Temples.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Kuknoor%20Step%20Well%20%26%20Temples.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "koravangala_temple",
+    "name_en": "Bucesvara Temple, Koravangala",
+    "name_kn": "ಕೊರವಂಗಲ ಬುಚ್ಚೇಶ್ವರ ದೇವಸ್ಥಾನ",
+    "lat": 13.0167,
+    "lng": 76.1,
+    "district": "Hassan",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "architecture"
+    ],
+    "description": "12th-century Hoysala temple at Koravangala village, raised on the classic star-shaped Jagati platform with lathe-turned pillars and richly carved ceilings and deities.",
+    "visit_hours": 1.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Bucesvara Temple, Koravangala.jpg",
+      "url": "/static/images/Bucesvara%20Temple%2C%20Koravangala.jpg",
+      "credit": "Wikimedia Commons / Dineshkannambadi",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Bucesvara%20Temple%2C%20Koravangala.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "sannati_chandralamba",
+    "name_en": "Sannati Buddhist Site & Chandralamba Temple",
+    "name_kn": "ಸನ್ನತಿ ಬೌದ್ಧ ಸ್ಥಳ ಮತ್ತು ಚಂದ್ರಲಾಂಬ ದೇವಸ್ಥಾನ",
+    "lat": 17.1833,
+    "lng": 76.6833,
+    "district": "Kalaburagi",
+    "region": "North Karnataka",
+    "categories": [
+      "heritage",
+      "spirituality"
+    ],
+    "description": "Archaeological site where Ashokan edicts were discovered at the Chandralamba temple, revealing a major Buddhist stupa complex and early-historic settlement along the Bhima river.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Sannati Buddhist Site & Chandralamba Temple.jpg",
+      "url": "/static/images/Sannati%20Buddhist%20Site%20%26%20Chandralamba%20Temple.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Sannati%20Buddhist%20Site%20%26%20Chandralamba%20Temple.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "om_beach_gokarna",
+    "name_en": "Om Beach, Gokarna",
+    "name_kn": "ಓಂ ಬೀಚ್, ಗೋಕರ್ಣ",
+    "lat": 14.5167,
+    "lng": 74.3,
+    "district": "Uttara Kannada",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "coastal",
+      "nature"
+    ],
+    "description": "Beach whose shoreline curves into the shape of the Sanskrit 'Om' symbol, one of Gokarna's most popular beaches with shacks, beach trekking, and water sports.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Om Beach, Gokarna.jpg",
+      "url": "/static/images/Om%20Beach%2C%20Gokarna.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Om%20Beach%2C%20Gokarna.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "karwar_beach",
+    "name_en": "Karwar Beach & Tagore Beach",
+    "name_kn": "ಕಾರವಾರ ಬೀಚ್ ಮತ್ತು ಟಾಗೋರ್ ಬೀಚ್",
+    "lat": 14.8123,
+    "lng": 74.1302,
+    "district": "Uttara Kannada",
+    "region": "Coastal Karnataka",
+    "categories": [
+      "coastal",
+      "culture"
+    ],
+    "description": "Coastal stretch along the Kali river estuary with the Tagore Beach promenade and museum, palm-lined sands, and views of the Arabian Sea; the beach is named after Rabindranath Tagore, who visited the town.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Karwar Beach & Tagore Beach.jpg",
+      "url": "/static/images/Karwar%20Beach%20%26%20Tagore%20Beach.jpg",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Karwar%20Beach%20%26%20Tagore%20Beach.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "devarayanadurga",
+    "name_en": "Devarayanadurga Fort & Bhoganandeeshwara Temple",
+    "name_kn": "ದೇವರಾಯನದುರ್ಗ ಕೋಟೆ ಮತ್ತು ಭೋಗನಂದೀಶ್ವರ ದೇವಸ್ಥಾನ",
+    "lat": 13.5167,
+    "lng": 77.1,
+    "district": "Tumakuru",
+    "region": "Central Karnataka",
+    "categories": [
+      "heritage",
+      "spirituality",
+      "adventure"
+    ],
+    "description": "Hill fortress east of Tumakuru with successive fort tiers, the Yoga Narasimha temple near the summit, the Bhoganandishwara temple at its base, and panoramic ridge views.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Devarayanadurga Fort & Bhoganandeeshwara Temple.jpg",
+      "url": "/static/images/Devarayanadurga%20Fort%20%26%20Bhoganandeeshwara%20Temple.jpg",
+      "credit": "Wikimedia Commons / Dineshkannambadi",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Devarayanadurga%20Fort%20%26%20Bhoganandeeshwara%20Temple.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "antharagange",
+    "name_en": "Antharagange Cave Temple & Trek, Kolar",
+    "name_kn": "ಅಂತರಗಂಗೆ ಗುಹಾ ದೇವಸ್ಥಾನ ಮತ್ತು ಟ್ರೆಕ್, ಕೋಲಾರ",
+    "lat": 13.2167,
+    "lng": 78.15,
+    "district": "Kolar",
+    "region": "Central Karnataka",
+    "categories": [
+      "spirituality",
+      "adventure",
+      "nature"
+    ],
+    "description": "Volcanic rock hillock near Kolar with a perennial spring feeding the Someshwara (Antharagange) temple, popular for cave exploration and a short night trek from Bengaluru.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Antharagange Cave Temple & Trek, Kolar.jpg",
+      "url": "/static/images/Antharagange%20Cave%20Temple%20%26%20Trek%2C%20Kolar.jpg",
+      "credit": "Wikimedia Commons / Solarstrike",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Antharagange%20Cave%20Temple%20%26%20Trek%2C%20Kolar.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "bisle_ghat",
+    "name_en": "Bisle Ghat Viewpoint",
+    "name_kn": "ಬಿಸಲೆ ಘಾಟ್ ವೀಕ್ಷಣಾ ಸ್ಥಳ",
+    "lat": 12.7667,
+    "lng": 75.7833,
+    "district": "Hassan",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "viewpoint",
+      "adventure"
+    ],
+    "description": "Western Ghats viewpoint in the Bisle reserve forest offering a sweeping panorama of the Sakleshpur ranges and a noted biodiversity hotspot for endemic birdlife.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Bisle Ghat Viewpoint.jpg",
+      "url": "/static/images/Bisle%20Ghat%20Viewpoint.jpg",
+      "credit": "Wikimedia Commons / Shanmugamp7",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Bisle%20Ghat%20Viewpoint.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "mandalpatti",
+    "name_en": "Mandalpatti Peak, Coorg",
+    "name_kn": "ಮಂಡಲಪಟ್ಟಿ ಶಿಖರ, ಕೂರ್ಗ",
+    "lat": 12.2667,
+    "lng": 75.9167,
+    "district": "Kodagu",
+    "region": "Malnad",
+    "categories": [
+      "nature",
+      "adventure",
+      "viewpoint"
+    ],
+    "description": "Grassy ridge-top viewpoint in the Pushpagiri range near Madikeri, reached by a rough jeep track, popular for sweeping Coorg valley sunsets and grassland vistas.",
+    "visit_hours": 4.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Mandalpatti Peak, Coorg.jpg",
+      "url": "/static/images/Mandalpatti%20Peak%2C%20Coorg.jpg",
+      "credit": "Wikimedia Commons / Aviator423",
+      "license": "CC BY-SA 4.0",
+      "source_url": "/static/images/Mandalpatti%20Peak%2C%20Coorg.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "nagarhole_forest",
+    "name_en": "Nagarhole National Park Entry (Veeranahosahalli)",
+    "name_kn": "ನಾಗರಹೊಳೆ ರಾಷ್ಟ್ರೀಯ ಉದ್ಯಾನವನ ಪ್ರವೇಶ (ವೀರನಹೊಸಹಳ್ಳಿ)",
+    "lat": 12.1833,
+    "lng": 76.0833,
+    "district": "Kodagu",
+    "region": "Malnad",
+    "categories": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "description": "Veeranahosahalli entry gate to Nagarhole Tiger Reserve, a premier Western Ghats park in the Nilgiri Biosphere known for tiger, leopard, and elephant sightings on jeep safaris.",
+    "visit_hours": 4.0,
+    "entry_fee_inr": {
+      "value": 200,
+      "basis": "estimated",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Nagarhole National Park Entry (Veeranahosahalli).jpg",
+      "url": "/static/images/Nagarhole%20National%20Park%20Entry%20%28Veeranahosahalli%29.jpg",
+      "credit": "Wikimedia Commons / Yathin S Krishnappa",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Nagarhole%20National%20Park%20Entry%20%28Veeranahosahalli%29.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "bylakuppe_monastery",
+    "name_en": "Namdroling Monastery (Golden Temple), Bylakuppe",
+    "name_kn": "ನಾಮ್ಡ್ರೋಲಿಂಗ್ ಮಠ (ಗೋಲ್ಡನ್ ಟೆಂಪಲ್), ಬೈಲಕುಪ್ಪೆ",
+    "lat": 12.1897,
+    "lng": 76.0478,
+    "district": "Kodagu",
+    "region": "South Karnataka",
+    "categories": [
+      "spirituality",
+      "culture",
+      "heritage"
+    ],
+    "description": "Large Tibetan Buddhist settlement in Bylakuppe housing the Namdroling Monastery (Golden Temple), with gilded Buddhas, frescoes, and a monastic college — one of the largest Tibetan settlements in India.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 0,
+      "basis": "sourced",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Namdroling Monastery (Golden Temple), Bylakuppe.jpg",
+      "url": "/static/images/Namdroling%20Monastery%20%28Golden%20Temple%29%2C%20Bylakuppe.jpg",
+      "credit": "Wikimedia Commons / Balajiviswanathan",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Namdroling%20Monastery%20%28Golden%20Temple%29%2C%20Bylakuppe.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "verified",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "sivaganga_hill",
+    "name_en": "Sivaganga Hill & Temple",
+    "name_kn": "ಶಿವಗಂಗೆ ಬೆಟ್ಟ ಮತ್ತು ದೇವಸ್ಥಾನ",
+    "lat": 13.4833,
+    "lng": 77.4,
+    "district": "Tumakuru",
+    "region": "South Karnataka",
+    "categories": [
+      "spirituality",
+      "heritage",
+      "viewpoint"
+    ],
+    "description": "Distinctive twin-peaked hill near Tumakuru (also called Dakshina Kashi) crowned by the Gangadhareshwara temple, with a trek to the summit and a large Nandi statue.",
+    "visit_hours": 2.5,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Sivaganga Hill & Temple.jpg",
+      "url": "/static/images/Sivaganga%20Hill%20%26%20Temple.jpg",
+      "credit": "Wikimedia Commons / Mallikarjunasj",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Sivaganga%20Hill%20%26%20Temple.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "medium",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "magadi_town",
+    "name_en": "Magadi Kaadu Gorge & Manchanabele Dam",
+    "name_kn": "ಮಗಡಿ ಕಾಡು ಕಮರು ಮತ್ತು ಮಂಚನಬೆಲೆ ಅಣೆಕಟ್ಟು",
+    "lat": 12.9591,
+    "lng": 77.2267,
+    "district": "Ramanagara",
+    "region": "South Karnataka",
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "description": "Scenic area around the Manchanabele reservoir near Magadi, known for birdwatching, kayaking, and the nearby rocky gorges, popular for quick day-trips from Bengaluru.",
+    "visit_hours": 3.0,
+    "entry_fee_inr": {
+      "value": null,
+      "basis": "unknown",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Magadi Kaadu Gorge & Manchanabele Dam.jpg",
+      "url": "/static/images/Magadi%20Kaadu%20Gorge%20%26%20Manchanabele%20Dam.jpg",
+      "credit": "Wikimedia Commons / Riju K",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Magadi%20Kaadu%20Gorge%20%26%20Manchanabele%20Dam.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  },
+  {
+    "id": "nrityagram",
+    "name_en": "Nrityagram Dance Village, Hesaraghatta",
+    "name_kn": "ನೃತ್ಯಗ್ರಾಮ ನೃತ್ಯ ಗ್ರಾಮ, ಹೆಸರಘಟ್ಟ",
+    "lat": 13.1333,
+    "lng": 77.3833,
+    "district": "Bengaluru Rural",
+    "region": "South Karnataka",
+    "categories": [
+      "culture",
+      "heritage"
+    ],
+    "description": "India's first modern gurukul for Indian classical dance, founded by Protima Gauri Bedi near Hesaraghatta, where resident dancers train in styles such as Odissi in a village designed by architect Gerard da Cunha.",
+    "visit_hours": 2.0,
+    "entry_fee_inr": {
+      "value": 200,
+      "basis": "estimated",
+      "source_url": "https://karnatakatourism.org",
+      "last_verified": "2026-10-26"
+    },
+    "accessibility_notes": {
+      "value": "unknown",
+      "verified": false
+    },
+    "best_season": {
+      "value": "Oct-Mar",
+      "source_url": null,
+      "last_verified": "2026-10-26"
+    },
+    "image": {
+      "file": "Nrityagram Dance Village, Hesaraghatta.jpg",
+      "url": "/static/images/Nrityagram%20Dance%20Village%2C%20Hesaraghatta.jpg",
+      "credit": "Wikimedia Commons / Sanyam Bahga",
+      "license": "CC BY-SA 3.0",
+      "source_url": "/static/images/Nrityagram%20Dance%20Village%2C%20Hesaraghatta.jpg"
+    },
+    "sources": [
+      "https://karnatakatourism.org"
+    ],
+    "verification_status": "partial",
+    "dataset_version": "1.1",
+    "wheelchair_accessible": "unknown",
+    "opening_hours": null,
+    "closed_days": null,
+    "crowd_level": "low",
+    "last_verified": "2026-10-26"
+  }
+]

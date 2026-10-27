@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namma Payana — Itinerary & Budget Export ({{ trip.dna.start_city }} • {{ trip.dna.days }} Days)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 14mm 16mm;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #242426;
+      background: #FFFFFF;
+      line-height: 1.5;
+      margin: 0;
+      padding: 24px;
+      font-size: 13px;
+    }
+    .no-print {
+      position: sticky;
+      top: 0;
+      background: #FFFDF8;
+      border: 1px solid #E6D8BC;
+      border-radius: 8px;
+      padding: 12px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      z-index: 999;
+    }
+    .no-print-btns {
+      display: flex;
+      gap: 10px;
+    }
+    .btn-print {
+      background: #8B2E1F;
+      color: #FFF;
+      border: none;
+      padding: 9px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.15s ease;
+    }
+    .btn-print:hover { background: #A03524; }
+    .btn-csv {
+      background: #FFF;
+      color: #2F4F3A;
+      border: 1px solid #2F4F3A;
+      padding: 9px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-close {
+      background: #EFEFEF;
+      color: #555;
+      border: none;
+      padding: 9px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    /* Brand Header */
+    .brand-header {
+      border-bottom: 3px solid #8B2E1F;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .brand-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #8B2E1F;
+      letter-spacing: 0.5px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-title-kn {
+      font-family: 'Noto Sans Kannada', sans-serif;
+      font-size: 18px;
+      color: #C9A24B;
+      font-weight: 700;
+    }
+    .brand-tagline {
+      font-size: 12px;
+      color: #666;
+      margin-top: 3px;
+      font-style: italic;
+    }
+    .header-badge {
+      text-align: right;
+    }
+    .engine-seal {
+      display: inline-block;
+      background: #F7F1E3;
+      border: 1px solid #C9A24B;
+      color: #7A5B15;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    /* Passport / Meta Bar */
+    .passport-bar {
+      background: #FBF8F1;
+      border: 1px solid #EADECA;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 22px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .passport-item {
+      font-size: 12px;
+    }
+    .passport-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #888;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+    .passport-val {
+      font-weight: 600;
+      color: #242426;
+      font-size: 13px;
+    }
+    /* Days Section */
+    .section-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 16px;
+      color: #8B2E1F;
+      border-bottom: 1px solid #E2D5BA;
+      padding-bottom: 4px;
+      margin: 22px 0 14px 0;
+      letter-spacing: 0.5px;
+    }
+    .day-card {
+      border: 1px solid #E8E2D2;
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      background: #FFF;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .day-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #F0ECE1;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    .day-number {
+      font-family: 'Cinzel', Georgia, serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #2F4F3A;
+    }
+    .day-distance {
+      background: #EEF5F0;
+      color: #2F4F3A;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+    }
+    .stop-item {
+      margin-left: 6px;
+      padding-left: 12px;
+      border-left: 2px solid #C9A24B;
+      margin-bottom: 14px;
+    }
+    .stop-item:last-child {
+      margin-bottom: 4px;
+    }
+    .stop-header {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 3px;
+    }
+    .stop-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: #242426;
+    }
+    .kannada-name {
+      font-family: 'Noto Sans Kannada', sans-serif;
+      color: #8B2E1F;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .stop-meta {
+      font-size: 11.5px;
+      color: #555;
+      margin-bottom: 4px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .stop-badge {
+      background: #F4EFE3;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #7A5B15;
+    }
+    .stop-desc {
+      font-size: 12px;
+      color: #4A4A4F;
+      line-height: 1.45;
+      margin: 3px 0;
+    }
+    .stop-why {
+      font-size: 11px;
+      color: #2F4F3A;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    /* Table */
+    .table-cost {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 12px;
+      page-break-inside: avoid;
+    }
+    .table-cost th {
+      background: #F4EFE3;
+      color: #554422;
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 8px 10px;
+      border: 1px solid #DDD3BE;
+      text-align: left;
+    }
+    .table-cost td {
+      border: 1px solid #E8E2D2;
+      padding: 7px 10px;
+      color: #333;
+    }
+    .table-cost tr:nth-child(even) td {
+      background: #FCFAF6;
+    }
+    .table-cost .row-total {
+      background: #FBF6EB !important;
+      font-weight: 700;
+      color: #8B2E1F;
+      font-size: 13px;
+    }
+    /* Footer */
+    .footer {
+      margin-top: 30px;
+      border-top: 1px solid #DDD;
+      padding-top: 12px;
+      font-size: 11px;
+      color: #777;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      page-break-inside: avoid;
+    }
+    @media print {
+      body {
+        padding: 0;
+        font-size: 11.5px;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .day-card {
+        border-color: #DDD;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar (Hidden during Print) -->
+  <div class="no-print">
+    <div>
+      <strong style="color:#8B2E1F; font-size: 14px;">🖨️ Namma Payana Print &amp; PDF Export</strong>
+      <div style="font-size: 11px; color:#666;">Ready for high-resolution A4 printing or saving as PDF</div>
+    </div>
+    <div class="no-print-btns">
+      <button class="btn-print" onclick="window.print()">
+        <span>⎙</span> Print / Save as PDF
+      </button>
+      <a class="btn-csv" href="/api/trips/{{ trip.id }}/export?format=csv" title="Download CSV spreadsheet">
+        <span>📊</span> Export CSV
+      </a>
+      <button class="btn-close" onclick="window.close()">✕ Close</button>
+    </div>
+  </div>
+
+  <!-- Official Brand Header -->
+  <div class="brand-header">
+    <div>
+      <div class="brand-title">
+        <span>Namma Payana</span>
+        <span class="brand-title-kn">ನಮ್ಮ ಪಯಣ</span>
+      </div>
+      <div class="brand-tagline">Beyond Destinations. Into Karnataka. — Verified Itinerary &amp; Budget Plan</div>
+    </div>
+    <div class="header-badge">
+      <div class="engine-seal">Trip Reality Engine</div>
+      <div style="font-size: 10px; color:#888; margin-top: 2px;">Official Benchmark Guarantee</div>
+    </div>
+  </div>
+
+  <!-- Passport / Trip Meta Bar -->
+  <div class="passport-bar">
+    <div class="passport-item">
+      <div class="passport-label">Transit Origin</div>
+      <div class="passport-val">📍 {{ trip.dna.start_city }} Hub</div>
+    </div>
+    <div class="passport-item">
+      <div class="passport-label">Duration &amp; Group</div>
+      <div class="passport-val">📅 {{ trip.dna.days }} Days &bull; 👥 {{ trip.dna.travellers }} Traveller(s)</div>
+    </div>
+    <div class="passport-item">
+      <div class="passport-label">Travel Style &amp; Pace</div>
+      <div class="passport-val">✨ {{ trip.dna.style|capitalize }} &bull; {{ trip.dna.pace|capitalize }}</div>
+    </div>
+    <div class="passport-item">
+      <div class="passport-label">Trip Reference</div>
+      <div class="passport-val"><code style="font-size:11px; color:#8B2E1F;">{{ trip.id[:13] }}…</code></div>
+    </div>
+  </div>
+
+  <!-- Day-by-Day Detailed Itinerary -->
+  <div class="section-title">Verified Daily Schedule</div>
+
+  {% for day in trip.itinerary.days %}
+  <div class="day-card">
+    <div class="day-header">
+      <div class="day-number">Day {{ day.day_number }}: {{ day.region_theme }}</div>
+      <div class="day-distance">≈{{ day.travel_distance_km }} km road travel</div>
+    </div>
+
+    {% for stop in day.stops %}
+    <div class="stop-item">
+      <div class="stop-header">
+        <span class="stop-name">{{ loop.index }}. {{ stop.destination.name_en }}</span>
+        {% if stop.destination.name_kn %}
+        <span class="kannada-name">{{ stop.destination.name_kn }}</span>
+        {% endif %}
+        <span class="stop-badge">{{ stop.destination.district }}</span>
+      </div>
+
+      <div class="stop-meta">
+        <span>⏰ Arrival: <strong>{{ stop.arrival_hour_str }}</strong></span>
+        <span>⏱ Visit: <strong>{{ stop.visit_hours }}h</strong></span>
+        <span>🎟 Entry Fee: <strong>{% if stop.destination.entry_fee_inr.value is not none %}₹{{ stop.destination.entry_fee_inr.value }}{% else %}Free / Included{% endif %}</strong> ({{ stop.destination.entry_fee_inr.basis }})</span>
+      </div>
+
+      {% if stop.destination.description %}
+      <div class="stop-desc">{{ stop.destination.description }}</div>
+      {% endif %}
+
+      {% if stop.why_matched %}
+      <div class="stop-why">💡 {{ stop.why_matched | join(" · ") }}</div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+  <!-- Budget Breakdown Table -->
+  <div style="page-break-inside: avoid; margin-top: 24px;">
+    <div class="section-title">Verified Expense Breakdown (INR)</div>
+    <table class="table-cost">
+      <thead>
+        <tr>
+          <th style="width: 25%;">Expense Category</th>
+          <th style="width: 22%;">Amount (INR)</th>
+          <th style="width: 20%;">Allocation Basis</th>
+          <th>Calculation Details &amp; Assumptions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for line in trip.cost_summary.cost_lines %}
+        <tr>
+          <td style="font-weight: 600; text-transform: capitalize;">{{ line.category|replace("_", " ") }}</td>
+          <td style="font-weight: 600; color:#8B2E1F;">
+            {% if line.amount is not none %}₹{{ "{:,.0f}".format(line.amount) }}{% else %}Included{% endif %}
+          </td>
+          <td><span style="font-size: 10px; text-transform: uppercase; background:#F4EFE3; padding:2px 6px; border-radius:3px;">{{ line.basis }}</span></td>
+          <td style="color:#555;">{{ line.assumption }}</td>
+        </tr>
+        {% endfor %}
+        <tr class="row-total">
+          <td>Total Estimated Cost</td>
+          <td>₹{{ "{:,.0f}".format(trip.cost_summary.total_cost) }}</td>
+          <td colspan="2" style="font-weight: normal; color:#554422;">
+            Status: <strong>{{ trip.cost_summary.cost_label }}</strong> (Includes 10% unpredicted reserve margin)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Gazette Footer -->
+  <div class="footer">
+    <div>
+      <strong>Namma Payana</strong> &bull; Kannada Digital Innovation Hackathon 2026 &bull; Verified State Gazette Benchmarks
+    </div>
+    <div>
+      Generated with deterministic constraint engine.
+    </div>
+  </div>
+
+  <!-- Auto-trigger print dialog after styles render -->
+  <script>
+    window.addEventListener('load', function() {
+      // Automatically prompt browser print dialog after fonts settle
+      setTimeout(function() {
+        window.print();
+      }, 500);
+    });
+  </script>
+</body>
+</html>
