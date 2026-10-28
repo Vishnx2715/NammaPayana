@@ -537,6 +537,7 @@ const Auth = {
   },
 
   quickDemoLogin() {
+    this.switchTab('login');
     const identInput = document.getElementById('login-identifier');
     const pwdInput = document.getElementById('login-password');
     if (identInput) {

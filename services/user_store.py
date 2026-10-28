@@ -26,11 +26,57 @@ class UserStore:
         self.db_path = db_path or config.DATABASE_PATH
         self.init_db()
 
-    def init_db(self, app=None) -> None:
-        """Create tables and optionally seed demo user.
+    def _should_seed_demo(self) -> bool:
+        """Determines if demo user should be seeded.
 
-        Demo user is only seeded when FLASK_ENV=development AND ENABLE_DEMO_USER=1.
+        Seeded when:
+        1. Running on Render (RENDER=true, RENDER_DEMO=1, or RENDER_SERVICE_ID/RENDER_INSTANCE_ID present)
+        2. DEMO_MODE=1 or ALLOW_DEMO_LOGIN=1
+        3. FLASK_ENV=development AND ENABLE_DEMO_USER=1
+
+        Strict production environments (FLASK_ENV=production without Render/demo flags)
+        will not seed the demo user to satisfy security audit constraints.
         """
+        is_render = (
+            os.environ.get("RENDER", "").lower() in ("true", "1")
+            or os.environ.get("RENDER_DEMO", "").lower() in ("true", "1")
+            or bool(os.environ.get("RENDER_SERVICE_ID"))
+            or bool(os.environ.get("RENDER_INSTANCE_ID"))
+            or os.environ.get("DEMO_MODE", "").lower() in ("true", "1")
+            or os.environ.get("ALLOW_DEMO_LOGIN", "").lower() in ("true", "1")
+        )
+        if is_render:
+            return True
+
+        flask_env = os.environ.get("FLASK_ENV", "development").lower()
+        enable_demo = os.environ.get("ENABLE_DEMO_USER", "0")
+
+        if flask_env == "production":
+            return False
+
+        return flask_env == "development" and enable_demo == "1"
+
+    def seed_demo_user(self) -> None:
+        """Seed demo user into the database if not present."""
+        demo_email = "demo@nammapayana.in"
+        try:
+            existing = self.get_user_by_email(demo_email)
+            if not existing:
+                demo_password = os.environ.get("DEMO_USER_PASSWORD", "demo123")
+                self._create_user_raw(
+                    username="demo",
+                    email=demo_email,
+                    full_name="Praveen Kumar",
+                    password=demo_password,
+                    persona="Heritage Explorer",
+                    home_city="Bengaluru",
+                )
+                print(f"[DEMO] Demo user initialized: {demo_email}", flush=True)
+        except Exception as e:
+            print(f"[DEMO] Seeding error: {e}", flush=True)
+
+    def init_db(self, app=None) -> None:
+        """Create tables and optionally seed demo user."""
         with db_connection(self.db_path) as conn:
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS users (
@@ -59,29 +105,8 @@ class UserStore:
                              (_dt.datetime.now(_dt.timezone.utc).isoformat(),))
             conn.commit()
 
-        flask_env = os.environ.get("FLASK_ENV", "development").lower()
-        enable_demo = os.environ.get("ENABLE_DEMO_USER", "0")
-
-        if flask_env == "production":
-            return  # Never seed in production, regardless of ENABLE_DEMO_USER
-
-        if flask_env == "development" and enable_demo == "1":
-            demo_email = "demo@nammapayana.in"
-            try:
-                existing = self.get_user_by_email(demo_email)
-                if not existing:
-                    demo_password = os.environ.get("DEMO_USER_PASSWORD", "demo123")
-                    self._create_user_raw(
-                        username="demo",
-                        email=demo_email,
-                        full_name="Praveen Kumar",
-                        password=demo_password,
-                        persona="Heritage Explorer",
-                        home_city="Bengaluru",
-                    )
-                    print(f"[DEV] Demo user password: {demo_password}", flush=True)
-            except Exception:
-                pass
+        if self._should_seed_demo():
+            self.seed_demo_user()
 
     def _create_user_raw(
         self,
@@ -176,6 +201,12 @@ class UserStore:
                 SELECT * FROM users WHERE email = ? OR username = ?
             """, (ident_clean, ident_clean)).fetchone()
 
+            if not row and ident_clean in ("demo@nammapayana.in", "demo") and self._should_seed_demo():
+                self.seed_demo_user()
+                row = conn.execute("""
+                    SELECT * FROM users WHERE email = ? OR username = ?
+                """, (ident_clean, ident_clean)).fetchone()
+
             if not row:
                 return None
 
@@ -217,6 +248,9 @@ class UserStore:
             return None
         with db_connection(self.db_path) as conn:
             row = conn.execute("SELECT * FROM users WHERE email = ? OR username = ?", (clean, clean)).fetchone()
+            if not row and clean in ("demo@nammapayana.in", "demo") and self._should_seed_demo():
+                self.seed_demo_user()
+                row = conn.execute("SELECT * FROM users WHERE email = ? OR username = ?", (clean, clean)).fetchone()
             if not row:
                 return None
             return self._row_to_user(row)

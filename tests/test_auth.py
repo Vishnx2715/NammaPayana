@@ -168,3 +168,55 @@ def test_google_check_registered_is_accepted(client, monkeypatch):
     assert data["data"]["email"] == email
 
 
+def test_demo_login_on_render_production(monkeypatch, tmp_path, client):
+    """When running on Render in production mode, demo user must be available for 1-click login."""
+    monkeypatch.setenv("FLASK_ENV", "production")
+    monkeypatch.setenv("RENDER", "true")
+    from services.user_store import UserStore
+    store = UserStore(db_path=str(tmp_path / "render_test.db"))
+    store.init_db()
+    user = store.get_user_by_email("demo@nammapayana.in")
+    assert user is not None, "Demo user must be seeded when RENDER=true"
+    assert user["username"] == "demo"
+    assert user["full_name"] == "Praveen Kumar"
+
+    # Authenticate directly
+    authed = store.authenticate("demo@nammapayana.in", "demo123")
+    assert authed is not None
+    assert authed["email"] == "demo@nammapayana.in"
+
+
+def test_demo_login_via_render_demo_flag(monkeypatch, tmp_path):
+    """RENDER_DEMO=1 flag allows demo user seeding even if FLASK_ENV=production."""
+    monkeypatch.setenv("FLASK_ENV", "production")
+    monkeypatch.setenv("RENDER_DEMO", "1")
+    from services.user_store import UserStore
+    store = UserStore(db_path=str(tmp_path / "render_demo_test.db"))
+    store.init_db()
+    user = store.get_user_by_email("demo@nammapayana.in")
+    assert user is not None
+    assert user["email"] == "demo@nammapayana.in"
+
+
+def test_demo_login_lazy_seeding_on_demand(monkeypatch, tmp_path):
+    """If db was created without demo user, attempting login with demo@nammapayana.in on Render self-heals."""
+    monkeypatch.setenv("FLASK_ENV", "production")
+    # Initialize store without Render flags (demo not seeded)
+    monkeypatch.delenv("RENDER", raising=False)
+    monkeypatch.delenv("RENDER_DEMO", raising=False)
+    from services.user_store import UserStore
+    store = UserStore(db_path=str(tmp_path / "lazy_test.db"))
+    store.init_db()
+    assert store.get_user_by_email("demo@nammapayana.in") is None
+
+    # Now simulate Render runtime environment
+    monkeypatch.setenv("RENDER", "true")
+    # Querying by identifier should self-heal and seed
+    user = store.get_user_by_identifier("demo@nammapayana.in")
+    assert user is not None
+    assert user["email"] == "demo@nammapayana.in"
+    authed = store.authenticate("demo@nammapayana.in", "demo123")
+    assert authed is not None
+
+
+

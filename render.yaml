@@ -8,6 +8,10 @@ services:
     envVars:
       - key: FLASK_ENV
         value: production
+      - key: ENABLE_DEMO_USER
+        value: "1"
+      - key: RENDER_DEMO
+        value: "1"
       - key: SECRET_KEY
         generateValue: true
       - key: AI_PROVIDER
