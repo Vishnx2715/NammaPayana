@@ -1921,8 +1921,8 @@ const I18n = {
     // Update all elements with data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      const val = this.t(key);
-      if (val) {
+      const val = this.t(key, null);
+      if (val !== null && val !== key) {
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           el.value = val;
         } else {

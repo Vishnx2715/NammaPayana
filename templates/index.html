@@ -458,17 +458,6 @@
       </div>
     </section>
 
-    <!-- Featured Iconic Landmarks Showcase -->
-    <section class="featured-landmarks-section">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-tag" data-i18n="feat.tag">Heritage & Wonders</div>
-          <h2 class="section-title" data-i18n="feat.title">Iconic Karnataka Landmarks</h2>
-          <p class="section-desc" data-i18n="feat.desc">Explore authentic monuments, temples, coastal retreats, and wildlife parks across Karnataka.</p>
-        </div>
-        <div id="featured-landmarks-grid" class="featured-landmarks-grid"></div>
-      </div>
-    </section>
 
     <!-- How It Works -->
     <section class="how-it-works-section">
@@ -990,11 +979,7 @@
 
       <!-- Atlas Landmark Directory & Gallery -->
       <div class="atlas-gallery-section">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
-          <div>
-            <h3 style="font-size: 22px; color: var(--earth-red); margin-bottom: 4px;" data-i18n="map.gallery_title">Landmark Directory &amp; Photography</h3>
-            <p style="font-size: 13px; color: var(--charcoal-muted); margin: 0;" data-i18n="map.gallery_sub">Browse all verified destinations across Karnataka. Click any landmark to focus it on the Atlas.</p>
-          </div>
+        <div style="display: flex; justify-content: flex-end; align-items: baseline; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
           <span id="atlas-gallery-count" class="badge badge-sourced" style="font-size: 12px; padding: 4px 12px;"></span>
         </div>
         <div id="atlas-landmarks-grid" class="atlas-landmarks-grid"></div>
@@ -1245,8 +1230,8 @@
   <!-- Runtime config: server-injected, no secrets committed to JS -->
   <script nonce="{{g.csp_nonce}}">
     window.NP_CONFIG = {
-      supabaseUrl: {{config.SUPABASE_URL | tojson}},
-      supabaseAnonKey: {{config.SUPABASE_ANON_KEY | tojson}}
+      supabaseUrl: '{{ config.SUPABASE_URL or "" }}',
+      supabaseAnonKey: '{{ config.SUPABASE_ANON_KEY or "" }}'
     };
   </script>
   <script src="/static/js/auth.js?v=20261026_02"></script>
